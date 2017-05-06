@@ -1,0 +1,21 @@
+{
+  "name": "leemtekforms",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Duane Leem <duane@leemfamily.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/leemtek/Secure-Forms",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "aws/s3/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

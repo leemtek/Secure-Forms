@@ -1,0 +1,21 @@
+{
+  "name": "tmjsleeptherapycentre",
+  "homepage": "https://github.com/leemtek/Secure-Forms",
+  "authors": [
+    "Duane Leem <duane@leemfamily.com>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
