@@ -22,7 +22,7 @@ import { HomeComponent } from "./pages/home.component";
   ],
   imports: [
     BrowserModule,
-    FormsModule,
+    FormsModule, ReactiveFormsModule,
     HttpModule,
 
     // Routing

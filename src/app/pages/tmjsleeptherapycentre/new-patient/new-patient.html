@@ -80,52 +80,53 @@
                 <h1 class="text-center">Patient Health Questionnaire</h1>
             </div>
         </section>
-
-        <!-- Authorization -->
-        <section class="container">
-            <div class="row margin-bottom-40">
-                <div class="col-md-10 col-md-offset-1">
-                    <h2 class="text-center">AUTHORIZATION TO RELEASE INFORMATION TO THE BELOW LISTED REFERRING AND TREATING HEALTH CARE PROFESSIONALS:</h2>
-                </div><!-- /col -->
-            </div><!-- /row -->
-
-            <div class="row margin-bottom-10"><div class="col-md-4"><input type="text" class="form-control" placeholder="Doctor's Name" /></div><div class="col-md-8"><input type="text" class="form-control" placeholder="Location / Phone" /></div></div>
-            <div class="row margin-bottom-10"><div class="col-md-4"><input type="text" class="form-control" placeholder="Doctor's Name" /></div><div class="col-md-8"><input type="text" class="form-control" placeholder="Location / Phone" /></div></div>
-            <div class="row margin-bottom-10"><div class="col-md-4"><input type="text" class="form-control" placeholder="Doctor's Name" /></div><div class="col-md-8"><input type="text" class="form-control" placeholder="Location / Phone" /></div></div>
-            <div class="row margin-bottom-10"><div class="col-md-4"><input type="text" class="form-control" placeholder="Doctor's Name" /></div><div class="col-md-8"><input type="text" class="form-control" placeholder="Location / Phone" /></div></div>
-            <div class="row margin-bottom-10"><div class="col-md-4"><input type="text" class="form-control" placeholder="Doctor's Name" /></div><div class="col-md-8"><input type="text" class="form-control" placeholder="Location / Phone" /></div></div>
-            <div class="row margin-bottom-10"><div class="col-md-4"><input type="text" class="form-control" placeholder="Doctor's Name" /></div><div class="col-md-8"><input type="text" class="form-control" placeholder="Location / Phone" /></div></div>
-            <div class="row margin-bottom-40"><div class="col-md-4"><input type="text" class="form-control" placeholder="Doctor's Name" /></div><div class="col-md-8"><input type="text" class="form-control" placeholder="Location / Phone" /></div></div>
-
-            <div class="row margin-bottom-40">
-                <div class="col-md-10 col-md-offset-1">
-                    <p class="center-block">I authorize the release of communications regarding my treatment including a full report of examination findings, diagnosis, treatment plan, and progress reports to the providers listed above.</p>
-                </div><!-- /col -->
-            </div><!-- /row -->
-
-            <div class="row">
-                <div class="col-md-10 col-md-offset-1">
-                    <div class="col-lg-8">
-                        <div class="form-group">
-                            <label for="s1_signature">Patient Signature</label>
-                            <input type="text" class="form-control" name="s1_signature" placeholder="Type your full name.">
-                        </div>
+        
+        <form>
+            <!-- Section 1: Authorization -->
+            <section class="container">
+                <div class="row margin-bottom-40">
+                    <div class="col-md-10 col-md-offset-1">
+                        <h2 class="text-center">AUTHORIZATION TO RELEASE INFORMATION TO THE BELOW LISTED REFERRING AND TREATING HEALTH CARE PROFESSIONALS:</h2>
                     </div><!-- /col -->
-                    <div class="col-lg-4">
-                        <div class="form-group">
-                            <label for="s1_date">Date</label>
-                            <input type="text" class="form-control" name="s1_date" placeholder="12/01/2018">
-                        </div>
+                </div><!-- /row -->
+
+                <div class="row margin-bottom-10"><div class="col-md-4"><input type="text" class="form-control" name="s1DrName1" [(ngModel)]="objUser.s1DrName1" placeholder="Doctor's Name" /></div><div class="col-md-8"><input type="text" class="form-control" name="s1DrLocationPhone1" [(ngModel)]="objUser.s1DrLocationPhone1" placeholder="Location / Phone" /></div></div>
+                <div class="row margin-bottom-10"><div class="col-md-4"><input type="text" class="form-control" name="s1DrName2" [(ngModel)]="objUser.s1DrName2" placeholder="Doctor's Name" /></div><div class="col-md-8"><input type="text" class="form-control" name="s1DrLocationPhone2" [(ngModel)]="objUser.s1DrLocationPhone2" placeholder="Location / Phone" /></div></div>
+                <div class="row margin-bottom-10"><div class="col-md-4"><input type="text" class="form-control" name="s1DrName3" [(ngModel)]="objUser.s1DrName3" placeholder="Doctor's Name" /></div><div class="col-md-8"><input type="text" class="form-control" name="s1DrLocationPhone3" [(ngModel)]="objUser.s1DrLocationPhone3" placeholder="Location / Phone" /></div></div>
+                <div class="row margin-bottom-10"><div class="col-md-4"><input type="text" class="form-control" name="s1DrName4" [(ngModel)]="objUser.s1DrName4" placeholder="Doctor's Name" /></div><div class="col-md-8"><input type="text" class="form-control" name="s1DrLocationPhone4" [(ngModel)]="objUser.s1DrLocationPhone4" placeholder="Location / Phone" /></div></div>
+                <div class="row margin-bottom-10"><div class="col-md-4"><input type="text" class="form-control" name="s1DrName5" [(ngModel)]="objUser.s1DrName5" placeholder="Doctor's Name" /></div><div class="col-md-8"><input type="text" class="form-control" name="s1DrLocationPhone5" [(ngModel)]="objUser.s1DrLocationPhone5" placeholder="Location / Phone" /></div></div>
+                <div class="row margin-bottom-10"><div class="col-md-4"><input type="text" class="form-control" name="s1DrName6" [(ngModel)]="objUser.s1DrName6" placeholder="Doctor's Name" /></div><div class="col-md-8"><input type="text" class="form-control" name="s1DrLocationPhone6" [(ngModel)]="objUser.s1DrLocationPhone6" placeholder="Location / Phone" /></div></div>
+                <div class="row margin-bottom-10"><div class="col-md-4"><input type="text" class="form-control" name="s1DrName7" [(ngModel)]="objUser.s1DrName7" placeholder="Doctor's Name" /></div><div class="col-md-8"><input type="text" class="form-control" name="s1DrLocationPhone7" [(ngModel)]="objUser.s1DrLocationPhone7" placeholder="Location / Phone" /></div></div>
+
+                <div class="row margin-bottom-40">
+                    <div class="col-md-10 col-md-offset-1">
+                        <p class="center-block">I authorize the release of communications regarding my treatment including a full report of examination findings, diagnosis, treatment plan, and progress reports to the providers listed above.</p>
                     </div><!-- /col -->
-                </div><!-- /col -->
-            </div><!-- /row -->
-        </section>
+                </div><!-- /row -->
 
-        <!-- Daytime Sleepiness Evaluation -->
-        <section class="container">
-            
-        </section>
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="col-lg-8">
+                            <div class="form-group">
+                                <label for="s1_signature">Patient Signature</label>
+                                <input type="text" class="form-control" name="s1PatientSignature" [(ngModel)]="objUser.s1PatientSignature" placeholder="Type your full name.">
+                            </div>
+                        </div><!-- /col -->
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <label for="s1_date">Date</label>
+                                <input type="text" class="form-control" name="s1SignatureDate" [(ngModel)]="objUser.s1SignatureDate" placeholder="12/01/2018">
+                            </div>
+                        </div><!-- /col -->
+                    </div><!-- /col -->
+                </div><!-- /row -->
+            </section>
 
+            <!-- Section 2: Daytime Sleepiness Evaluation -->
+            <section class="container">
+                
+            </section>
+        </form>
 
         <!-- Bootstrap core JavaScript
         ================================================== -->
