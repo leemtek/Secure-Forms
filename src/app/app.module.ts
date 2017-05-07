@@ -3,6 +3,9 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
 import { HttpModule, Http, RequestOptions } from '@angular/http';
 
+// Addons
+import { ReCaptchaModule } from 'angular2-recaptcha';
+
 // Routing
 import { RouterModule } from '@angular/router';
 import { APP_ROUTES } from "./app.routing";
@@ -24,6 +27,7 @@ import { HomeComponent } from "./pages/home.component";
     BrowserModule,
     FormsModule, ReactiveFormsModule,
     HttpModule,
+    ReCaptchaModule,
 
     // Routing
     RouterModule,

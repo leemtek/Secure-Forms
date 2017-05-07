@@ -29,10 +29,12 @@ export class NewPatientService {
         /* ========================================================
             Section 2: Daytime Sleepiness Evaluation
         ======================================================== */
+
+        googleResponse: null
     };
 
     // REST API Location
-    strRegisterAPI: string = "http://localhost:8010/iahsp-31959/us-central1/register/member/payment";
+    strRegisterAPI: string = "http://localhost:3003/forms/secure-forms/tmjsleeptherapycentre/new-patient";
     
     constructor (private http: Http) {
         

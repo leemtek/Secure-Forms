@@ -16,4 +16,7 @@ export interface User {
     /* ========================================================
         Section 2: Daytime Sleepiness Evaluation
     ======================================================== */
+
+
+    googleResponse: string;
 }
