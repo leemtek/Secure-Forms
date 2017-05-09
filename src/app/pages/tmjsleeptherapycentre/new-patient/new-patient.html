@@ -1,57 +1,9 @@
-
-<!-- Static navbar -->
-<nav class="navbar navbar-default navbar-static-top">
-    <div class="container">
-        <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">TMJ &amp; Sleep Therapy Centre of SF</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right">
-            <li><a href="https://tmjsleeptherapycentre.com">Home</a></li>
-            <li><a href="https://tmjsleeptherapycentre.com/meet-dr">Meet Dr. Alkhoury</a></li>
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                    <li><a href="https://tmjsleeptherapycentre.com/">TMJ - Adults</a></li>
-                    <li><a href="https://tmjsleeptherapycentre.com/">TMJ - Children</a></li>
-                    <li><a href="https://tmjsleeptherapycentre.com/">Sleep Disorders - Adults</a></li>
-                    <li><a href="https://tmjsleeptherapycentre.com/">Sleep Disorders - Children</a></li>
-                    <li><a href="https://tmjsleeptherapycentre.com/">Craniofacial Pain</a></li>
-                    <li><a href="https://tmjsleeptherapycentre.com/">Facial Pain</a></li>
-                    <li><a href="https://tmjsleeptherapycentre.com/">Neck &amp; Jaw Pain</a></li>
-                    <li><a href="https://tmjsleeptherapycentre.com/">Complex Orthodontics</a></li>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Education <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                    <li><a href="https://tmjsleeptherapycentre.com/">TMJ &amp; TMD</a></li>
-                    <li><a href="https://tmjsleeptherapycentre.com/">Sleep Disorders</a></li>
-                </ul>
-            </li>
-            <li><a href="https://tmjsleeptherapycentre.com/testimonials">Patient Testimonials</a></li>
-            <li class="active"><a href="#">Referral Form</a></li>
-            <li><a href="https://tmjsleeptherapycentre.com/contact">Contact</a></li>
-        </ul>
-        </div><!--/.nav-collapse -->
-    </div>
-</nav>
-
-<!-- Jumbotron -->
-<section class="jumbotron">
-    <div class="container">
-        <h1 class="text-center">Patient Health Questionnaire</h1>
-    </div>
-</section>
+<tmj-new-patient-header>Loading...</tmj-new-patient-header>
 
 <form #form="ngForm">
-    <!-- Section 1: Authorization -->
+    <!-- ==================================================================
+        Section 1: Authorization for Information Release
+    ================================================================== -->
     <section class="container">
         <div class="row margin-bottom-40">
             <div class="col-md-10 col-md-offset-1">
@@ -65,7 +17,7 @@
         <div class="row margin-bottom-10"><div class="col-md-4"><input type="text" class="form-control" name="s1DrName4" [(ngModel)]="objUser.s1DrName4" placeholder="Doctor's Name" /></div><div class="col-md-8"><input type="text" class="form-control" name="s1DrLocationPhone4" [(ngModel)]="objUser.s1DrLocationPhone4" placeholder="Location / Phone" /></div></div>
         <div class="row margin-bottom-10"><div class="col-md-4"><input type="text" class="form-control" name="s1DrName5" [(ngModel)]="objUser.s1DrName5" placeholder="Doctor's Name" /></div><div class="col-md-8"><input type="text" class="form-control" name="s1DrLocationPhone5" [(ngModel)]="objUser.s1DrLocationPhone5" placeholder="Location / Phone" /></div></div>
         <div class="row margin-bottom-10"><div class="col-md-4"><input type="text" class="form-control" name="s1DrName6" [(ngModel)]="objUser.s1DrName6" placeholder="Doctor's Name" /></div><div class="col-md-8"><input type="text" class="form-control" name="s1DrLocationPhone6" [(ngModel)]="objUser.s1DrLocationPhone6" placeholder="Location / Phone" /></div></div>
-        <div class="row margin-bottom-10"><div class="col-md-4"><input type="text" class="form-control" name="s1DrName7" [(ngModel)]="objUser.s1DrName7" placeholder="Doctor's Name" /></div><div class="col-md-8"><input type="text" class="form-control" name="s1DrLocationPhone7" [(ngModel)]="objUser.s1DrLocationPhone7" placeholder="Location / Phone" /></div></div>
+        <div class="row margin-bottom-40"><div class="col-md-4"><input type="text" class="form-control" name="s1DrName7" [(ngModel)]="objUser.s1DrName7" placeholder="Doctor's Name" /></div><div class="col-md-8"><input type="text" class="form-control" name="s1DrLocationPhone7" [(ngModel)]="objUser.s1DrLocationPhone7" placeholder="Location / Phone" /></div></div>
 
         <div class="row margin-bottom-40">
             <div class="col-md-10 col-md-offset-1">
@@ -89,7 +41,72 @@
                 </div><!-- /col -->
             </div><!-- /col -->
         </div><!-- /row -->
+    </section>
 
+    <!-- ==================================================================
+        Section 2: Daytime Sleepiness Evaluation
+    ================================================================== -->
+    <section class="bg-color-lightgrey margin-bottom-40 padding40-top-bottom">
+        <div class="container">
+            <div class="row margin-bottom-10">
+                <div class="col-md-10 col-md-offset-1">
+                    <h2 class="text-center text-bold">Daytime Sleepiness Evaluation</h2>
+                    <h3 class="text-center margin-bottom-20">Epworth Sleepiness Scale</h3>
+                    <p>
+                        The Epworth Sleepiness Scale was developed and validated by Dr. Murray Johns of Melbourne Australia. It 
+                        is a simple, self-administered questionnaire -- widely used by sleep professionals in quantifying the 
+                        level of daytime sleepiness.
+                    </p>
+                    <p class="text-bold">For the following situations, answer with one of the following numbers:</p>
+                    <p class="text-bold" style="margin-left: 20px;">
+                        0 - Would never doze.<br />
+                        1 - Slight chance of dozing.<br />
+                        2 - Moderate chance of dozing.<br />
+                        3 - High chance of dozing.<br />
+                    </p>
+                </div><!-- /col -->
+            </div><!-- /row -->
+            <div class="row margin-bottom-40">
+                <div class="col-md-7 col-md-offset-1">
+                    <div><select name="s2sittingReading" style="margin-right: 10px; margin-bottom: 5px;" [(ngModel)]="objUser.s2sittingReading"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option></select>Sitting and Reading</div>
+                    <div><select name="s2watcingTV" style="margin-right: 10px; margin-bottom: 5px;" [(ngModel)]="objUser.s2watcingTV"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option></select>Watching Television</div>
+                    <div><select name="s2inactive" style="margin-right: 10px; margin-bottom: 5px;" [(ngModel)]="objUser.s2inactive"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option></select>Sitting, inactive in a public place</div>
+                    <div><select name="s2passenger" style="margin-right: 10px; margin-bottom: 5px;" [(ngModel)]="objUser.s2passenger"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option></select>As a passanger in a car for an hour without a break</div>
+                    <div><select name="s2lyingDown" style="margin-right: 10px; margin-bottom: 5px;" [(ngModel)]="objUser.s2lyingDown"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option></select>Lying down to rest in the afternoon when circumstances permit</div>
+                    <div><select name="s2talking" style="margin-right: 10px; margin-bottom: 5px;" [(ngModel)]="objUser.s2talking"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option></select>Sitting and talking to someone</div>
+                    <div><select name="s2noAlcohol" style="margin-right: 10px; margin-bottom: 5px;" [(ngModel)]="objUser.s2noAlcohol"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option></select>Sitting quietly after a lunch without alcohol</div>
+                    <div><select name="s2traffic" style="margin-right: 10px;" [(ngModel)]="objUser.s2traffic"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option></select>In a car, while stopped for a few minutes in traffic</div>
+                </div>
+                <div class="col-md-3">
+                    <div class="text-bold margin-bottom-10" style="font-size: larger">Total Score</div>
+                    <input name="s2total" class="form-control disabled" placeholder="0" value="{{newPatientService.get_s2total()}}" readonly />
+                </div><!-- /col -->
+            </div><!-- /row -->
+
+            <div class="row margin-bottom-40">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="col-lg-8">
+                        <div class="form-group">
+                            <label for="s2PatientSignature">Patient Signature</label>
+                            <input type="text" class="form-control" name="s2PatientSignature" [(ngModel)]="objUser.s2PatientSignature" placeholder="Type your full name.">
+                        </div>
+                    </div><!-- /col -->
+                    <div class="col-lg-4">
+                        <div class="form-group">
+                            <label for="s2SignatureDate">Date</label>
+                            <input type="text" class="form-control" name="s2SignatureDate" [(ngModel)]="objUser.s2SignatureDate" placeholder="12/01/2018">
+                        </div>
+                    </div><!-- /col -->
+                </div><!-- /col -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+    </section>
+
+
+    <!-- ==================================================================
+        Final Section: Recaptcha and Form Submission
+    ================================================================== -->
+    <section class="container">
         <div class="row">
             <div class="col-lg-2 col-lg-offset-4">
                 <div class="margin-bottom-20">
@@ -103,10 +120,5 @@
                 <button id="btnSubmit" class="btn btn-primary" [disabled]="form.invalid || objUser.googleResponse == null" (click)="mdSend()">Submit</button>
             </div><!-- /col -->
         </div><!-- /row -->
-    </section>
-
-    <!-- Section 2: Daytime Sleepiness Evaluation -->
-    <section class="container">
-        
     </section>
 </form>

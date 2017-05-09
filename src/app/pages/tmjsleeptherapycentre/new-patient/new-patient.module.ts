@@ -7,11 +7,15 @@ import { ReCaptchaModule } from 'angular2-recaptcha';
 
 import { newPatientRouting } from "./new-patient.routing";
 
+import { HeaderComponent } from "./header.component";
 import { NewPatientComponent } from "./new-patient.component";
+import { ThankYouComponent } from "./thank-you.component";
 
 @NgModule({
     declarations: [
-        NewPatientComponent
+        HeaderComponent,
+        NewPatientComponent,
+        ThankYouComponent
     ],
     imports: [
         CommonModule,

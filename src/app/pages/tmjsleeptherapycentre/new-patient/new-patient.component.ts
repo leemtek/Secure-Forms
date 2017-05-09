@@ -30,26 +30,26 @@ export class NewPatientComponent {
     // Send to REST endpoint.
     mdSend() {
         // Disable submit button and indicate "Please wait...".
-        document.getElementById("registration_submit").textContent = "Please Wait...";
-        document.getElementById("registration_submit").classList.remove("btn-primary");
-        document.getElementById("registration_submit").classList.add("btn-info");
-        (<HTMLInputElement> document.getElementById("registration_submit")).disabled = true;
+        document.getElementById("btnSubmit").textContent = "Please Wait...";
+        document.getElementById("btnSubmit").classList.remove("btn-primary");
+        document.getElementById("btnSubmit").classList.add("btn-info");
+        (<HTMLInputElement> document.getElementById("btnSubmit")).disabled = true;
 
         // Attempt to send email.
         this.newPatientService.mdSendData(this.objUser)
             .subscribe(data => {
                 if (data.sent === "yes") {
                     // Success
-                    document.getElementById("registration_submit").textContent = "Email Sent!";
-                    document.getElementById("registration_submit").classList.remove("btn-info");
-                    document.getElementById("registration_submit").classList.add("btn-success");
-                    (<HTMLInputElement> document.getElementById("registration_submit")).disabled = true;
+                    document.getElementById("btnSubmit").textContent = "Email Sent!";
+                    document.getElementById("btnSubmit").classList.remove("btn-info");
+                    document.getElementById("btnSubmit").classList.add("btn-success");
+                    (<HTMLInputElement> document.getElementById("btnSubmit")).disabled = true;
                 } else {
                     // Something went wrong.
-                    document.getElementById("registration_submit").textContent = "Please try again.";
-                    document.getElementById("registration_submit").classList.remove("btn-info");
-                    document.getElementById("registration_submit").classList.add("btn-danger");
-                    (<HTMLInputElement> document.getElementById("registration_submit")).disabled = false;
+                    document.getElementById("btnSubmit").textContent = "Please try again.";
+                    document.getElementById("btnSubmit").classList.remove("btn-info");
+                    document.getElementById("btnSubmit").classList.add("btn-danger");
+                    (<HTMLInputElement> document.getElementById("btnSubmit")).disabled = false;
 
                     // Reset captcha.
                     this.objUser.googleResponse = null;

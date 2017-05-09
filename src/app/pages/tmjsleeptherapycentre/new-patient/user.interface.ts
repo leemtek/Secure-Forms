@@ -16,7 +16,21 @@ export interface User {
     /* ========================================================
         Section 2: Daytime Sleepiness Evaluation
     ======================================================== */
+    s2sittingReading: number;
+    s2watcingTV: number;
+    s2inactive: number;
+    s2passenger: number;
+    s2lyingDown: number;
+    s2talking: number;
+    s2noAlcohol: number;
+    s2traffic: number;
+    s2total: number;
 
+    s2PatientSignature: string;
+    s2SignatureDate: string;
 
+    /* ========================================================
+        Final Section: Google reCaptcha
+    ======================================================== */
     googleResponse: string;
 }
