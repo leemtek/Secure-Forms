@@ -11,7 +11,9 @@ declare var $:any;
 @Component({
     selector: "tmj-new-patient",
     templateUrl: "new-patient.html",
-    styles: [``],
+    styles: [`
+        h2 { font-size: 24px; }
+    `],
     providers: [NewPatientService, SeoService]
 })
 export class NewPatientComponent {

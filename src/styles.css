@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+/* Jumbotron */
+.vertical-center {
+    position: relative;
+    transform: translateY(50%);
+}
+
+.text-italics { font-style: italic; }
+
+.margin-top-20 { margin-top: 20px; }
+.margin-top-40 { margin-top: 40px; }
+.margin-top-60 { margin-top: 60px; }
+.margin-top-neg20 { margin-top: -20px; }
+.margin-bottom-40 { margin-bottom: 40px; }
+.margin-left-20 { margin-left: 20px; }

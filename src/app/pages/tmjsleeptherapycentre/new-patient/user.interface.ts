@@ -13,6 +13,7 @@ export interface User {
     s1PatientSignature: string;
     s1SignatureDate: string;
 
+
     /* ========================================================
         Section 2: Daytime Sleepiness Evaluation
     ======================================================== */
@@ -28,6 +29,21 @@ export interface User {
 
     s2PatientSignature: string;
     s2SignatureDate: string;
+
+
+    /* ========================================================
+        Section 3: Nightime Sleepiness Evaluation
+    ======================================================== */
+    s3snoring_a: number; s3snoring_b: number;
+    s3gasp: number;
+    s3collarSize: number;
+    s3sleep_busyOrActive: number; s3sleep_drivingOrStoppedAtLight: number;
+    s3highBloodPressure: number;
+    s3total: number;
+
+    s3PatientSignature: string;
+    s3SignatureDate: string;
+
 
     /* ========================================================
         Final Section: Google reCaptcha

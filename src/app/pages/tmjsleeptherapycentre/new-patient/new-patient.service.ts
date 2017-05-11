@@ -47,6 +47,20 @@ export class NewPatientService {
         s2PatientSignature: "Duane Leem",
         s2SignatureDate: "05/06/2017",
 
+
+        /* ========================================================
+            Section 3: Nightime Sleepiness Evaluation
+        ======================================================== */
+        s3snoring_a: 0,  s3snoring_b: 0, 
+        s3gasp: 0, 
+        s3collarSize: 0, 
+        s3sleep_busyOrActive: 0, s3sleep_drivingOrStoppedAtLight: 0,
+        s3highBloodPressure: 0,
+        s3total: 0, 
+
+        s3PatientSignature: null,
+        s3SignatureDate: null,
+
         /* ========================================================
             Final Section: Google reCaptcha
         ======================================================== */
@@ -65,6 +79,19 @@ export class NewPatientService {
             Number.parseInt(this.objUser.s2traffic.toString())
         ; // this.objUser.s2total
         return this.objUser.s2total;
+    } // set_s2total
+
+    get_s3total(): number {
+        this.objUser.s3total = 
+            Number.parseInt(this.objUser.s3snoring_a.toString()) + 
+            Number.parseInt(this.objUser.s3snoring_b.toString()) + 
+            Number.parseInt(this.objUser.s3gasp.toString()) + 
+            Number.parseInt(this.objUser.s3collarSize.toString()) + 
+            Number.parseInt(this.objUser.s3sleep_busyOrActive.toString()) + 
+            Number.parseInt(this.objUser.s3sleep_drivingOrStoppedAtLight.toString()) + 
+            Number.parseInt(this.objUser.s3highBloodPressure.toString())
+        ; // this.objUser.s2total
+        return this.objUser.s3total;
     } // set_s2total
     
     constructor (private http: Http) {

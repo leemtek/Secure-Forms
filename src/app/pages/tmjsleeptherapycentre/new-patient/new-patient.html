@@ -102,6 +102,84 @@
         </div><!-- /container -->
     </section>
 
+    <!-- ==================================================================
+        Section 3: Nightime Sleepiness Evaluation
+    ================================================================== -->
+    <section class="padding40-top-bottom">
+        <div class="container">
+            <div class="row margin-bottom-40">
+                <div class="col-md-10 col-md-offset-1">
+                    <h2 class="text-center text-bold">Nightime Sleepiness Evaluation</h2>
+                    <h3 class="text-center margin-bottom-20">Screening Tool for Sleep Apnea</h3>
+                    <p class="text-center text-italics" style="margin-top: -10px;">Developed by David White, M.D., Harvard Medical School, Boston, MA</p>
+                </div><!-- /col -->
+            </div><!-- /row -->
+
+            <!-- Questions-->
+            <div class="row margin-bottom-40">
+                <div class="col-md-12">
+                    <!-- Snoring -->
+                    <div class="row"><div class="col-md-5 col-md-offset-3 text-bold">1. Snoring</div><div class="col-md-2"></div></div>
+                    <div class="row"><div class="col-md-5 col-md-offset-3"><span class="margin-left-20">a) Do you snore loud? (>3 nights per week)?</span></div><div class="col-md-2"><select name="s3snoring_a" class="" style="margin-right: 10px; margin-bottom: 5px;" [(ngModel)]="objUser.s3snoring_a"><option value="0">No</option><option value="2">Yes</option></select></div></div>
+                    <div class="row"><div class="col-md-5 col-md-offset-3"><span class="margin-left-20">b) Is your snoring loud? Can it be heard through a door or wall?</span></div><div class="col-md-2"><select name="s3snoring_b" class="" style="margin-right: 10px; margin-bottom: 5px;" [(ngModel)]="objUser.s3snoring_b"><option value="0">No</option><option value="2">Yes</option></select></div></div>
+
+                    <!-- Stopped Breathing or Gasp -->
+                    <div class="row margin-top-20"><div class="col-md-5 col-md-offset-3 text-bold">2. Has it ever been reported to you that you stop breathing or gasp during sleep?</div><div class="col-md-2"></div></div>
+                    <div class="row"><div class="col-md-5 col-md-offset-3"><span class="margin-left-20">a) Do you snore loud? (>3 nights per week)?</span></div><div class="col-md-2"><select name="s3snoring_a" class="" style="margin-right: 10px; margin-bottom: 5px;" [(ngModel)]="objUser.s3gasp"><option value="0">Never</option><option value="3">Occassionally</option><option value="5">Frequently</option></select></div></div>
+
+                    <!-- Collar Size -->
+                    <div class="row margin-top-20"><div class="col-md-5 col-md-offset-3 text-bold">3. What is your collar size?</div><div class="col-md-2">
+                        <select class="" name="s3collarSize" [(ngModel)]="objUser.s3collarSize">
+                            <optgroup label="Male">
+                                <option value="0">Less than 17 inches</option>
+                                <option value="5">More than 17 inches</option>
+                            </optgroup>
+                            <optgroup label="Female">
+                                <option value="0">Less than 16 inches</option>
+                                <option value="5">More than 16 inches</option>
+                            </optgroup>
+                        </select>
+                    </div></div>
+
+                    <!-- Occassionally Fall Asleep -->
+                    <div class="row margin-top-20"><div class="col-md-5 col-md-offset-3 text-bold">4. Do you occassionally fall asleep during the day when?</div><div class="col-md-2"></div></div>
+                    <div class="row"><div class="col-md-5 col-md-offset-3"><span class="margin-left-20">a) You are busy or active?</span></div><div class="col-md-2"><select name="s3sleep_busyOrActive" class="" style="margin-right: 10px; margin-bottom: 5px;" [(ngModel)]="objUser.s3sleep_busyOrActive"><option value="0">No</option><option value="2">Yes</option></select></div></div>
+                    <div class="row"><div class="col-md-5 col-md-offset-3"><span class="margin-left-20">b) Your are driving or stopped at a light?</span></div><div class="col-md-2"><select name="s3sleep_drivingOrStoppedAtLight" class="" style="margin-right: 10px; margin-bottom: 5px;" [(ngModel)]="objUser.s3sleep_drivingOrStoppedAtLight"><option value="0">No</option><option value="2">Yes</option></select></div></div>
+
+                    <!-- Being treated for high blood pressure? -->
+                    <div class="row margin-top-20"><div class="col-md-5 col-md-offset-3 text-bold">5. Have you had or are you being treated for high blood pressure?</div><div class="col-md-2"><select name="s3highBloodPressure" class="" style="margin-right: 10px; margin-bottom: 5px;" [(ngModel)]="objUser.s3highBloodPressure"><option value="0">No</option><option value="2">Yes</option></select></div></div>
+
+                    <!-- Total -->
+                    <div class="row margin-top-40">
+                        <div class="col-md-2 col-md-offset-5">
+                            <label for="basic-url">Total Score</label>
+                            <div class="input-group">
+                                <input name="s3total" class="form-control disabled" placeholder="0" value="{{newPatientService.get_s3total()}}" readonly />
+                            </div>
+                        </div><!-- /col -->
+                    </div><!-- /row -->
+                </div><!-- /col -->
+            </div><!-- /row -->
+
+            <!-- Patient Signature & Date -->
+            <div class="row margin-bottom-40">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="col-lg-8">
+                        <div class="form-group">
+                            <label for="s3PatientSignature">Patient Signature</label>
+                            <input type="text" class="form-control" name="s2PatientSignature" [(ngModel)]="objUser.s2PatientSignature" placeholder="Type your full name.">
+                        </div>
+                    </div><!-- /col -->
+                    <div class="col-lg-4">
+                        <div class="form-group">
+                            <label for="s3SignatureDate">Date</label>
+                            <input type="text" class="form-control" name="s2SignatureDate" [(ngModel)]="objUser.s2SignatureDate" placeholder="12/01/2018">
+                        </div>
+                    </div><!-- /col -->
+                </div><!-- /col -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+    </section>
 
     <!-- ==================================================================
         Final Section: Recaptcha and Form Submission

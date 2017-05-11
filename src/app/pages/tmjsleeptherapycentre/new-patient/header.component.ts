@@ -54,7 +54,17 @@ import { Component } from "@angular/core";
             </div>
         </section>
     `,
-    styles: [``]
+    styles: [`
+        section.jumbotron {
+            margin-top: -20px;
+        }
+
+        section.jumbotron h1 {
+            margin-top: 0px;
+            font-size: 40px;
+            font-weight: bold;
+        }
+    `]
 })
 export class HeaderComponent {
 
