@@ -58,8 +58,8 @@ export class NewPatientService {
         s3highBloodPressure: 0,
         s3total: 0, 
 
-        s3PatientSignature: null,
-        s3SignatureDate: null,
+        s3PatientSignature: "Duane Leem S3",
+        s3SignatureDate: "5/13/2017",
 
         /* ========================================================
             Final Section: Google reCaptcha

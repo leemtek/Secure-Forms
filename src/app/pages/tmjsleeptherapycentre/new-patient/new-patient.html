@@ -124,8 +124,7 @@
                     <div class="row"><div class="col-md-5 col-md-offset-3"><span class="margin-left-20">b) Is your snoring loud? Can it be heard through a door or wall?</span></div><div class="col-md-2"><select name="s3snoring_b" class="" style="margin-right: 10px; margin-bottom: 5px;" [(ngModel)]="objUser.s3snoring_b"><option value="0">No</option><option value="2">Yes</option></select></div></div>
 
                     <!-- Stopped Breathing or Gasp -->
-                    <div class="row margin-top-20"><div class="col-md-5 col-md-offset-3 text-bold">2. Has it ever been reported to you that you stop breathing or gasp during sleep?</div><div class="col-md-2"></div></div>
-                    <div class="row"><div class="col-md-5 col-md-offset-3"><span class="margin-left-20">a) Do you snore loud? (>3 nights per week)?</span></div><div class="col-md-2"><select name="s3snoring_a" class="" style="margin-right: 10px; margin-bottom: 5px;" [(ngModel)]="objUser.s3gasp"><option value="0">Never</option><option value="3">Occassionally</option><option value="5">Frequently</option></select></div></div>
+                    <div class="row margin-top-20"><div class="col-md-5 col-md-offset-3 text-bold">2. Has it ever been reported to you that you stop breathing or gasp during sleep?</div><div class="col-md-2"><select name="s3snoring_a" class="" style="margin-right: 10px; margin-bottom: 5px;" [(ngModel)]="objUser.s3gasp"><option value="0">Never</option><option value="3">Occassionally</option><option value="5">Frequently</option></select></div></div>
 
                     <!-- Collar Size -->
                     <div class="row margin-top-20"><div class="col-md-5 col-md-offset-3 text-bold">3. What is your collar size?</div><div class="col-md-2">
@@ -167,13 +166,13 @@
                     <div class="col-lg-8">
                         <div class="form-group">
                             <label for="s3PatientSignature">Patient Signature</label>
-                            <input type="text" class="form-control" name="s2PatientSignature" [(ngModel)]="objUser.s2PatientSignature" placeholder="Type your full name.">
+                            <input type="text" class="form-control" name="s3PatientSignature" [(ngModel)]="objUser.s3PatientSignature" placeholder="Type your full name.">
                         </div>
                     </div><!-- /col -->
                     <div class="col-lg-4">
                         <div class="form-group">
                             <label for="s3SignatureDate">Date</label>
-                            <input type="text" class="form-control" name="s2SignatureDate" [(ngModel)]="objUser.s2SignatureDate" placeholder="12/01/2018">
+                            <input type="text" class="form-control" name="s3SignatureDate" [(ngModel)]="objUser.s3SignatureDate" placeholder="12/01/2018">
                         </div>
                     </div><!-- /col -->
                 </div><!-- /col -->
