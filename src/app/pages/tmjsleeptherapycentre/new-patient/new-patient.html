@@ -181,6 +181,37 @@
     </section>
 
     <!-- ==================================================================
+        Section 4: Patient Information
+    ================================================================== -->
+    <section class="bg-color-lightgrey margin-bottom-40 padding40-top-bottom">
+        <div class="container">
+            <div class="row margin-bottom-10">
+                <div class="col-md-10 col-md-offset-1">
+                    <h2 class="text-center text-bold margin-bottom-40">Patient Information</h2>
+                    
+                    <div class="row">
+                        <div class="col-sm-12 col-md-4">
+                            <div class="form-group has-error has-feedback">
+                                <input type="text" name="s4firstName" [(ngModel)]="objUser.s4firstName" class="form-control" placeholder="First Name" required />
+                                <span class="glyphicon glyphicon-asterisk form-control-feedback"></span>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4">
+                            <input type="text" name="s4middleName" [(ngModel)]="objUser.s4middleName" class="form-control" placeholder="Middle Name" />
+                        </div>
+                        <div class="col-sm-12 col-md-4">
+                            <div class="form-group has-error has-feedback">
+                                <input type="text" name="s4lastName" [(ngModel)]="objUser.s4lastName" class="form-control has-error" placeholder="Last Name" required />
+                                <span class="glyphicon glyphicon-asterisk form-control-feedback"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /col -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+    </section>
+
+    <!-- ==================================================================
         Final Section: Recaptcha and Form Submission
     ================================================================== -->
     <section class="container">
