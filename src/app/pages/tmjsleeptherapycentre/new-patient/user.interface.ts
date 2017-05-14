@@ -46,6 +46,30 @@ export interface User {
 
 
     /* ========================================================
+        Section 4: Patient Information
+    ======================================================== */
+    s4title: string;
+    s4firstName: string; s4middleName: string; s4lastName: string;
+    s4age: number; s4dob: string;
+    s4referredBy: string; s4referredBy_title: string;
+    s4locationHealthProvider: string;
+    s4patient_address: string;
+    s4patient_city: string; s4patient_state: string; s4patient_zip: string;
+    s4patient_homePhone: string; s4patient_altPhone: string;
+    s4empType: string;
+
+    // Responsible Party
+    s4responsibleParty: string;
+    s4responsibleParty_address: string;
+    s4responsibleParty_city: string; s4responsibleParty_state: string; s4responsibleParty_zip: string;
+
+    // Family Dentist
+    s4familyDentist: string; s4familyDentist_contact: string;
+    s4familyPhysician: string; s4familyPhysician_contact: string;
+    s4reasonForAppt: string;
+
+
+    /* ========================================================
         Final Section: Google reCaptcha
     ======================================================== */
     googleResponse: string;

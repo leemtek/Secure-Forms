@@ -1,0 +1,107 @@
+<tmj-new-patient-header>Loading...</tmj-new-patient-header>
+
+<form #form="ngForm">
+    <!-- ==================================================================
+        Section 1: Personal Information
+    ================================================================== -->
+    <section class="container">
+        <div class="row margin-bottom-40">
+            <div class="col-md-10 col-md-offset-1">
+                <h2 class="text-center">Personal Information</h2>
+            </div><!-- /col -->
+        </div><!-- /row -->
+
+        <div class="row margin-bottom-40">
+            <div class="col-md-10 col-md-offset-1">
+                <!-- Name & Date -->
+                <div class="row margin-bottom-10">
+                    <div class="col-md-8">
+                        <input type="text" name="s1FullName" class="form-control" placeholder="Full Name" />
+                    </div><!-- /col -->
+                    <div class="col-md-4">
+                        <input type="text" name="s1Date" class="form-control" placeholder="Date: 5/14/2017" />
+                    </div><!-- /col -->
+                </div><!-- /row -->
+
+                <!-- Home & Mobile Phone -->
+                <div class="row margin-bottom-10">
+                    <div class="col-md-6">
+                        <input type="text" name="s1Phone_home" class="form-control" placeholder="Home Phone" />
+                    </div><!-- /col -->
+                    <div class="col-md-6">
+                        <input type="text" name="s1Phone_mobile" class="form-control" placeholder="Mobile Phone" />
+                    </div><!-- /col -->
+                </div><!-- /row -->
+
+                <!-- Email & SSN -->
+                <div class="row margin-bottom-10">
+                    <div class="col-md-6">
+                        <input type="text" name="s1Email" class="form-control" placeholder="Email Address" />
+                    </div><!-- /col -->
+                    <div class="col-md-6">
+                        <input type="text" name="s1SSN" class="form-control" placeholder="Social Security Number" />
+                    </div><!-- /col -->
+                </div><!-- /row -->
+
+                <!-- Address -->
+                <div class="row margin-bottom-10">
+                    <div class="col-md-12">
+                        <input type="text" name="s1Address" class="form-control" placeholder="Address" />
+                    </div><!-- /col -->
+                </div><!-- /row -->
+
+                <!-- State, City, Zip -->
+                <div class="row margin-bottom-10">
+                    <div class="col-md-4">
+                        <input type="text" name="s1State" class="form-control" placeholder="State: CA" />
+                    </div><!-- /col -->
+                    <div class="col-md-4">
+                        <input type="text" name="s1City" class="form-control" placeholder="City" />
+                    </div><!-- /col -->
+                    <div class="col-md-4">
+                        <input type="text" name="s1Zip" class="form-control" placeholder="Zip" />
+                    </div><!-- /col -->
+                </div><!-- /row -->
+            </div><!-- /col -->
+        </div><!-- /row -->
+
+        
+    </section>
+
+
+    <!-- ==================================================================
+        Final Section: Recaptcha and Form Submission
+    ================================================================== -->
+    <section class="container">
+        <div class="row margin-bottom-40">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="col-lg-8">
+                    <div class="form-group">
+                        <label for="sfSignature">Signature</label>
+                        <input type="text" class="form-control" name="sfSignature" [(ngModel)]="objUser.sfSignature" placeholder="Type your full name.">
+                    </div>
+                </div><!-- /col -->
+                <div class="col-lg-4">
+                    <div class="form-group">
+                        <label for="sfSignatureDate">Date</label>
+                        <input type="text" class="form-control" name="sfSignatureDate" [(ngModel)]="objUser.sfSignatureDate" placeholder="12/01/2018">
+                    </div>
+                </div><!-- /col -->
+            </div><!-- /col -->
+        </div><!-- /row -->
+        
+        <div class="row">
+            <div class="col-lg-2 col-lg-offset-4">
+                <div class="margin-bottom-20">
+                    <re-captcha 
+                        (captchaResponse)="mdCaptchaHandle($event)" 
+                        (captchaExpired)="mdCaptchaExpired()"
+                        site_key="6LehihITAAAAACTOAXHazEke9OxwoCrbZAomEaYR"
+                    ></re-captcha>
+                </div>
+                
+                <button id="btnSubmit" class="btn btn-primary" [disabled]="form.invalid || objUser.googleResponse == null" (click)="mdSend()">Submit</button>
+            </div><!-- /col -->
+        </div><!-- /row -->
+    </section>
+</form>

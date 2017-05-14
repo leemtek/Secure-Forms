@@ -18,53 +18,78 @@ export class NewPatientService {
         /* ========================================================
             Section 1: Authorization for Information Release
         ======================================================== */
-        s1DrName1: "Dr. Jamil Alkhoury", s1DrLocationPhone1: "925-526-5229",
-        s1DrName2: null, s1DrLocationPhone2: null,
-        s1DrName3: null, s1DrLocationPhone3: null,
-        s1DrName4: null, s1DrLocationPhone4: null,
-        s1DrName5: null, s1DrLocationPhone5: null,
-        s1DrName6: null, s1DrLocationPhone6: null,
-        s1DrName7: null, s1DrLocationPhone7: null,
+            s1DrName1: "Dr. Jamil Alkhoury", s1DrLocationPhone1: "925-526-5229",
+            s1DrName2: null, s1DrLocationPhone2: null,
+            s1DrName3: null, s1DrLocationPhone3: null,
+            s1DrName4: null, s1DrLocationPhone4: null,
+            s1DrName5: null, s1DrLocationPhone5: null,
+            s1DrName6: null, s1DrLocationPhone6: null,
+            s1DrName7: null, s1DrLocationPhone7: null,
 
-        s1PatientSignature: "Duane Leem",
-        s1SignatureDate: "05/06/2017",
+            s1PatientSignature: "Duane Leem",
+            s1SignatureDate: "05/06/2017",
 
         /* ========================================================
             Section 2: Daytime Sleepiness Evaluation
         ======================================================== */
-        s2sittingReading: 0,
-        s2watcingTV: 0,
-        s2inactive: 1,
-        s2passenger: 0,
-        s2lyingDown: 0,
-        s2talking: 0,
-        s2noAlcohol: 0,
-        s2traffic: 0,
+            s2sittingReading: 0,
+            s2watcingTV: 0,
+            s2inactive: 1,
+            s2passenger: 0,
+            s2lyingDown: 0,
+            s2talking: 0,
+            s2noAlcohol: 0,
+            s2traffic: 0,
 
-        // Calculate Total
-        s2total: 0,
+            // Calculate Total
+            s2total: 0,
 
-        s2PatientSignature: "Duane Leem",
-        s2SignatureDate: "05/06/2017",
+            s2PatientSignature: "Duane Leem",
+            s2SignatureDate: "05/06/2017",
 
 
         /* ========================================================
             Section 3: Nightime Sleepiness Evaluation
         ======================================================== */
-        s3snoring_a: 0,  s3snoring_b: 0, 
-        s3gasp: 0, 
-        s3collarSize: 0, 
-        s3sleep_busyOrActive: 0, s3sleep_drivingOrStoppedAtLight: 0,
-        s3highBloodPressure: 0,
-        s3total: 0, 
+            s3snoring_a: 0,  s3snoring_b: 0, 
+            s3gasp: 0, 
+            s3collarSize: 0, 
+            s3sleep_busyOrActive: 0, s3sleep_drivingOrStoppedAtLight: 0,
+            s3highBloodPressure: 0,
+            s3total: 0, 
 
-        s3PatientSignature: "Duane Leem S3",
-        s3SignatureDate: "5/13/2017",
+            s3PatientSignature: "Duane Leem S3",
+            s3SignatureDate: "5/13/2017",
 
+
+        /* ========================================================
+            Section 4: Patient Information
+        ======================================================== */
+            s4title: null,
+            s4firstName: null, s4middleName: null, s4lastName: null,
+            s4age: null, s4dob: null,
+            s4referredBy: null, s4referredBy_title: null,
+            s4locationHealthProvider: null,
+            s4patient_address: null,
+            s4patient_city: null, s4patient_state: null, s4patient_zip: null,
+            s4patient_homePhone: null, s4patient_altPhone: null,
+            s4empType: null,
+
+            // Responsible Party
+            s4responsibleParty: null,
+            s4responsibleParty_address: null,
+            s4responsibleParty_city: null, s4responsibleParty_state: null, s4responsibleParty_zip: null,
+
+            // Family Dentist
+            s4familyDentist: null, s4familyDentist_contact: null,
+            s4familyPhysician: null, s4familyPhysician_contact: null,
+            s4reasonForAppt: null,
+
+        
         /* ========================================================
             Final Section: Google reCaptcha
         ======================================================== */
-        googleResponse: null
+            googleResponse: null
     };
 
     get_s2total(): number {
