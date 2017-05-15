@@ -188,7 +188,24 @@
             <div class="row margin-bottom-10">
                 <div class="col-md-10 col-md-offset-1">
                     <h2 class="text-center text-bold margin-bottom-40">Patient Information</h2>
-                    
+                    <!-- Title -->
+                    <div class="row margin-bottom-10">
+                        <div class="col-md-4 col-md-offset-4">
+                            <div class="input-group">
+                                <span class="input-group-addon">Prefix</span>
+                                <select name="s4title" class="form-control" [(ngModel)]="objUser.s4title">
+                                    <option>Please select</option>
+                                    <option value="Mr.">Mr.</option>
+                                    <option value="Ms.">Ms.</option>
+                                    <option value="Miss">Miss</option>
+                                    <option value="Mrs.">Mrs.</option>
+                                    <option value="Dr.">Dr.</option>
+                                </select>
+                            </div>
+                        </div><!-- /col -->
+                    </div><!-- /row -->
+
+                    <!-- First, Middle, Last Name-->
                     <div class="row">
                         <div class="col-sm-12 col-md-4">
                             <div class="form-group has-error has-feedback">
@@ -197,7 +214,10 @@
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-4">
-                            <input type="text" name="s4middleName" [(ngModel)]="objUser.s4middleName" class="form-control" placeholder="Middle Name" />
+                            <div class="form-group has-feedback">
+                                <input type="text" name="s4middleName" [(ngModel)]="objUser.s4middleName" class="form-control" placeholder="Middle Name" />
+                                <span class="glyphicon glyphicon-pencil form-control-feedback"></span>
+                            </div>
                         </div>
                         <div class="col-sm-12 col-md-4">
                             <div class="form-group has-error has-feedback">
@@ -205,7 +225,12 @@
                                 <span class="glyphicon glyphicon-asterisk form-control-feedback"></span>
                             </div>
                         </div>
-                    </div>
+                    </div><!-- /row -->
+
+                    <!--Age & DOB -->
+                    <div class="row">
+
+                    </div><!-- /row -->
                 </div><!-- /col -->
             </div><!-- /row -->
         </div><!-- /container -->
