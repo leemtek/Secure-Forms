@@ -29,6 +29,12 @@ export class JobApplicationService {
 
 
         /* ========================================================
+            Section 2: Questions
+        ======================================================== */
+        s2position: null,
+        s2under18: false,
+
+        /* ========================================================
             Final Section: Google reCaptcha
         ======================================================== */
         sfSignature: null, sfSignatureDate: null,

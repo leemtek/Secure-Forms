@@ -65,7 +65,43 @@
             </div><!-- /col -->
         </div><!-- /row -->
 
-        
+        <div class="row margin-bottom-40">
+            <div class="col-md-10">
+                <div class="row margin-bottom-5">
+                    <div class="col-md-6 text-right">
+                        What position are you applying for?
+                    </div><!-- /col -->
+                    <div class="col-md-6">
+                        <div class="form-group has-feedback">
+                            <input type="text" class="form-control" name="s2position" aria-describedby="s2position">
+                            <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                            <span id="s2position" class="sr-only">(success)</span>
+                        </div>
+                    </div><!-- /col -->
+                </div><!-- /row -->
+
+                <!-- Under 18 -->
+                <div class="row margin-bottom-5">
+                    <div class="col-md-6 text-right">
+                        Are you under the age of 18?
+                    </div><!-- /col -->
+                    <div class="col-md-6">
+                        <div class="form-group has-feedback">
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    Choose
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <li><a (click)="objUser.s2under18 = true">Yes</a></li>
+                                    <li><a (click)="objUser.s2under18 = false">No</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!-- /col -->
+                </div><!-- /row -->
+            </div><!-- /col -->
+        </div><!-- /row -->
     </section>
 
 

@@ -6,6 +6,7 @@
 }
 
 .text-italics { font-style: italic; }
+.text-right { text-align: right; }
 
 .margin-top-20 { margin-top: 20px; }
 .margin-top-40 { margin-top: 40px; }

@@ -13,6 +13,13 @@ export interface User {
 
 
     /* ========================================================
+        Section 2: Questions
+    ======================================================== */
+    s2position: string;
+    s2under18: boolean;
+
+
+    /* ========================================================
         Final Section: Signature & Google reCaptcha
     ======================================================== */
     sfSignature: string; sfSignatureDate: string;
