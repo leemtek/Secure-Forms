@@ -65,10 +65,10 @@ export class NewPatientService {
         /* ========================================================
             Section 4: Patient Information
         ======================================================== */
-            s4title: null,
-            s4firstName: null, s4middleName: null, s4lastName: null,
-            s4age: null, s4dob: null,
-            s4referredBy: null, s4referredBy_title: null,
+            s4title: "na",
+            s4firstName: "Duane", s4middleName: null, s4lastName: "Leem",
+            s4age: 30, s4dob: "5/16/2000",
+            s4referredBy: "Dr. Alkhoury", s4referredBy_title: "DDS",
             s4locationHealthProvider: null,
             s4patient_address: null,
             s4patient_city: null, s4patient_state: null, s4patient_zip: null,

@@ -194,7 +194,7 @@
                             <div class="input-group">
                                 <span class="input-group-addon">Prefix</span>
                                 <select name="s4title" class="form-control" [(ngModel)]="objUser.s4title">
-                                    <option>Please select</option>
+                                    <option value="na">Please select</option>
                                     <option value="Mr.">Mr.</option>
                                     <option value="Ms.">Ms.</option>
                                     <option value="Miss">Miss</option>
@@ -229,7 +229,52 @@
 
                     <!--Age & DOB -->
                     <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <div class="form-group has-error has-feedback">
+                                <div class="input-group">
+                                    <span class="input-group-addon">Age</span>
+                                    <input type="number" name="s4age" [(ngModel)]="objUser.s4age" class="form-control" placeholder="Age" required />
+                                    <span class="glyphicon glyphicon-asterisk form-control-feedback"></span>
+                                </div><!-- /input-group -->
+                            </div>
+                        </div><!-- /col -->
 
+                        <div class="col-sm-12 col-md-6">
+                            <div class="form-group has-error has-feedback">
+                                <div class="input-group">
+                                    <span class="input-group-addon">Date of Birth</span>
+                                    <input type="text" name="s4dob" [(ngModel)]="objUser.s4dob" class="form-control" placeholder="Example: 01/01/1990" required />
+                                    <span class="glyphicon glyphicon-asterisk form-control-feedback"></span>
+                                </div><!-- /input-group -->
+                            </div>
+                        </div><!-- /col -->
+                    </div><!-- /row -->
+
+                    <!--Referred By -->
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <div class="form-group has-feedback">
+                                <div class="input-group">
+                                    <span class="input-group-addon">Referred By</span>
+                                    <input type="text" name="s4referredBy" [(ngModel)]="objUser.s4referredBy" class="form-control" />
+                                    <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                                </div><!-- /input-group -->
+                            </div>
+                        </div><!-- /col -->
+
+                        <div class="col-sm-12 col-md-6">
+                            <div class="input-group">
+                                <span class="input-group-addon">Prefix</span>
+                                <select name="s4title" class="form-control" [(ngModel)]="objUser.s4referredBy_title">
+                                    <option value="na">Please select</option>
+                                    <option value="DDS">DDS</option>
+                                    <option value="MD">MD</option>
+                                    <option value="ENT">ENT</option>
+                                    <option value="DC">DC</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                        </div><!-- /col -->
                     </div><!-- /row -->
                 </div><!-- /col -->
             </div><!-- /row -->
