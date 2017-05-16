@@ -74,8 +74,8 @@
                     </div><!-- /col -->
                     <div class="col-md-6">
                         <div class="form-group has-feedback">
-                            <input type="text" class="form-control" name="s2position" aria-describedby="s2position">
-                            <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                            <input type="text" class="form-control" name="s2position" aria-describedby="s2position" [(ngModel)]="objUser.s2position" />
+                            <span class="glyphicon glyphicon-leaf form-control-feedback" aria-hidden="true"></span>
                             <span id="s2position" class="sr-only">(success)</span>
                         </div>
                     </div><!-- /col -->
@@ -89,16 +89,67 @@
                     <div class="col-md-6">
                         <div class="form-group has-feedback">
                             <div class="dropdown">
-                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                                     Choose
                                     <span class="caret"></span>
                                 </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <ul class="dropdown-menu" aria-labelledby="s2under18">
                                     <li><a (click)="objUser.s2under18 = true">Yes</a></li>
                                     <li><a (click)="objUser.s2under18 = false">No</a></li>
                                 </ul>
                             </div>
                         </div>
+                    </div><!-- /col -->
+                </div><!-- /row -->
+
+                <!-- Work in US -->
+                <div class="row margin-bottom-5">
+                    <div class="col-md-6 text-right">
+                        Are you authorized to work in the U.S. on an unrestricted basis?
+                    </div><!-- /col -->
+                    <div class="col-md-6">
+                        <div class="form-group has-feedback">
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    Choose
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="s2authorizedUS">
+                                    <li><a (click)="objUser.s2authorizedUS = true">Yes</a></li>
+                                    <li><a (click)="objUser.s2authorizedUS = false">No</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!-- /col -->
+                </div><!-- /row -->
+
+                <!-- Currently a Student? -->
+                <div class="row margin-bottom-5">
+                    <div class="col-md-6 text-right">
+                        Are you currently a student?
+                    </div><!-- /col -->
+                    <div class="col-md-6">
+                        <div class="form-group row">
+                            <div class="col-md-3">
+                                <div class="dropdown">
+                                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        Choose
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="s2student">
+                                        <li><a (click)="objUser.s2student = true">Yes</a></li>
+                                        <li><a (click)="objUser.s2student = false">No</a></li>
+                                    </ul>
+                                </div>
+                            </div><!-- /col -->
+
+                            <div class="col-md-9">
+                                <div class="input-group">
+                                    <span class="input-group-addon">If yes, where?</span>
+                                    <input type="text" name="s2student_where" class="form-control" [(ngModel)]="objUser.s2student_where" />
+                                </div>
+                            </div><!-- /col -->
+                        </div><!-- /form-group -->
                     </div><!-- /col -->
                 </div><!-- /row -->
             </div><!-- /col -->

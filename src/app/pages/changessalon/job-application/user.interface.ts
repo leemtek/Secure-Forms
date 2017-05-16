@@ -17,6 +17,8 @@ export interface User {
     ======================================================== */
     s2position: string;
     s2under18: boolean;
+    s2authorizedUS: boolean;
+    s2student: boolean; s2student_where: string;
 
 
     /* ========================================================
