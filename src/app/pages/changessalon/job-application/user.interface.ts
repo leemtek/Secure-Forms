@@ -16,9 +16,11 @@ export interface User {
         Section 2: Questions
     ======================================================== */
     s2position: string;
-    s2under18: boolean;
-    s2authorizedUS: boolean;
-    s2student: boolean; s2student_where: string;
+    s2under18: string;
+    s2authorizedUS: string;
+    s2student: string; s2student_where: string;
+    s2highSchool: string; s2highSchool_name: string;
+    s2college: string; s2college_graduated: string;
 
 
     /* ========================================================

@@ -75,7 +75,7 @@
                     <div class="col-md-6">
                         <div class="form-group has-feedback">
                             <input type="text" class="form-control" name="s2position" aria-describedby="s2position" [(ngModel)]="objUser.s2position" />
-                            <span class="glyphicon glyphicon-leaf form-control-feedback" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-pencil form-control-feedback" aria-hidden="true"></span>
                             <span id="s2position" class="sr-only">(success)</span>
                         </div>
                     </div><!-- /col -->
@@ -90,12 +90,12 @@
                         <div class="form-group has-feedback">
                             <div class="dropdown">
                                 <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                    Choose
+                                    {{objUser.s2under18}}
                                     <span class="caret"></span>
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="s2under18">
-                                    <li><a (click)="objUser.s2under18 = true">Yes</a></li>
-                                    <li><a (click)="objUser.s2under18 = false">No</a></li>
+                                    <li><a (click)="objUser.s2under18 = 'Yes'">Yes</a></li>
+                                    <li><a (click)="objUser.s2under18 = 'No'">No</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -111,12 +111,12 @@
                         <div class="form-group has-feedback">
                             <div class="dropdown">
                                 <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                    Choose
+                                    {{objUser.s2authorizedUS}}
                                     <span class="caret"></span>
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="s2authorizedUS">
-                                    <li><a (click)="objUser.s2authorizedUS = true">Yes</a></li>
-                                    <li><a (click)="objUser.s2authorizedUS = false">No</a></li>
+                                    <li><a (click)="objUser.s2authorizedUS = 'Yes'">Yes</a></li>
+                                    <li><a (click)="objUser.s2authorizedUS = 'No'">No</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -133,12 +133,12 @@
                             <div class="col-md-3">
                                 <div class="dropdown">
                                     <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                        Choose
+                                        {{objUser.s2student}}
                                         <span class="caret"></span>
                                     </button>
                                     <ul class="dropdown-menu" aria-labelledby="s2student">
-                                        <li><a (click)="objUser.s2student = true">Yes</a></li>
-                                        <li><a (click)="objUser.s2student = false">No</a></li>
+                                        <li><a (click)="objUser.s2student = 'Yes'">Yes</a></li>
+                                        <li><a (click)="objUser.s2student = 'No'">No</a></li>
                                     </ul>
                                 </div>
                             </div><!-- /col -->
@@ -147,6 +147,81 @@
                                 <div class="input-group">
                                     <span class="input-group-addon">If yes, where?</span>
                                     <input type="text" name="s2student_where" class="form-control" [(ngModel)]="objUser.s2student_where" />
+                                </div>
+                            </div><!-- /col -->
+                        </div><!-- /form-group -->
+                    </div><!-- /col -->
+                </div><!-- /row -->
+
+                <!-- Last Grade Completed in High School -->
+                <div class="row margin-bottom-5">
+                    <div class="col-md-6 text-right">
+                        Last grade completed in high school?
+                    </div><!-- /col -->
+                    <div class="col-md-6">
+                        <div class="form-group row">
+                            <div class="col-md-3">
+                                <div class="dropdown">
+                                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        {{objUser.s2highSchool}}
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="s2highSchool">
+                                        <li><a (click)="objUser.s2highSchool = '9'">9</a></li>
+                                        <li><a (click)="objUser.s2highSchool = '10'">10</a></li>
+                                        <li><a (click)="objUser.s2highSchool = '11'">11</a></li>
+                                        <li><a (click)="objUser.s2highSchool = '12'">12</a></li>
+                                        <li><a (click)="objUser.s2highSchool = 'GED'">GED</a></li>
+                                    </ul>
+                                </div>
+                            </div><!-- /col -->
+
+                            <div class="col-md-9">
+                                <div class="form-group has-feedback">
+                                    <input type="text" class="form-control" 
+                                        name="s2highSchool_name" 
+                                        aria-describedby="s2highSchool_name" 
+                                        [(ngModel)]="objUser.s2highSchool_name"
+                                        placeholder="Name and Location of high school" 
+                                    />
+                                    <span class="glyphicon glyphicon-pencil form-control-feedback" aria-hidden="true"></span>
+                                    <span id="s2highSchool_name" class="sr-only">(success)</span>
+                                </div>
+                            </div><!-- /col -->
+                        </div><!-- /form-group -->
+                    </div><!-- /col -->
+                </div><!-- /row -->
+
+                <!-- College, Trade, or Vocational School -->
+                <div class="row margin-bottom-5">
+                    <div class="col-md-6 text-right">
+                        Last grade completed in high school?
+                    </div><!-- /col -->
+                    <div class="col-md-6">
+                        <div class="form-group row">
+                            <div class="col-md-3">
+                                <div class="dropdown">
+                                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        {{objUser.s2college}}
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="s2college">
+                                        <li><a (click)="objUser.s2college = '1'">1</a></li>
+                                        <li><a (click)="objUser.s2college = '2'">2</a></li>
+                                        <li><a (click)="objUser.s2college = '3'">3</a></li>
+                                        <li><a (click)="objUser.s2college = '4'">4</a></li>
+                                    </ul>
+                                </div>
+                            </div><!-- /col -->
+
+                            <div class="col-md-9">
+                                <div class="input-group">
+                                    <span class="input-group-addon">Graduated?</span>
+                                    <select name="s2college_graduated" class="form-control" [(ngModel)]="objUser.s2college_graduated">
+                                        <option value="na">Please select</option>
+                                        <option value="Yes">Yes</option>
+                                        <option value="No">No</option>
+                                    </select>
                                 </div>
                             </div><!-- /col -->
                         </div><!-- /form-group -->

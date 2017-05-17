@@ -32,9 +32,11 @@ export class JobApplicationService {
             Section 2: Questions
         ======================================================== */
         s2position: "Web Developer",
-        s2under18: false,
-        s2authorizedUS: false,
-        s2student: false, s2student_where: "From DuaneLeem.com",
+        s2under18: "Choose",
+        s2authorizedUS: "Choose",
+        s2student: "Choose", s2student_where: "From DuaneLeem.com",
+        s2highSchool: "Choose", s2highSchool_name: null,
+        s2college: "Choose", s2college_graduated: "na",
 
         /* ========================================================
             Final Section: Google reCaptcha
