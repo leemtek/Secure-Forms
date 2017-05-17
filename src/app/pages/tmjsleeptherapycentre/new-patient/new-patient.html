@@ -265,7 +265,7 @@
                         <div class="col-sm-12 col-md-6">
                             <div class="input-group">
                                 <span class="input-group-addon">Prefix</span>
-                                <select name="s4title" class="form-control" [(ngModel)]="objUser.s4referredBy_title">
+                                <select name="s4referredBy_title" class="form-control" [(ngModel)]="objUser.s4referredBy_title">
                                     <option value="na">Please select</option>
                                     <option value="DDS">DDS</option>
                                     <option value="MD">MD</option>
@@ -276,6 +276,120 @@
                             </div>
                         </div><!-- /col -->
                     </div><!-- /row -->
+
+                    <!-- Location / Phone -->
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12">
+                            <div class="form-group has-feedback">
+                                <input type="text" name="s4locationHealthProvider" 
+                                    [(ngModel)]="objUser.s4locationHealthProvider" 
+                                    class="form-control" 
+                                    placeholder="Location and/or Phone of Healthcare Provider"
+                                />
+                                <span class="glyphicon glyphicon-pencil form-control-feedback"></span>
+                            </div>
+                        </div><!-- /col -->
+                    </div><!-- /row -->
+
+                    <!-- Patient Address -->
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12">
+                            <div class="form-group has-error has-feedback">
+                                <input type="text" name="s4patient_address" 
+                                    [(ngModel)]="objUser.s4patient_address" 
+                                    class="form-control" 
+                                    placeholder="Patient Address" 
+                                    required 
+                                />
+                                <span class="glyphicon glyphicon-asterisk form-control-feedback"></span>
+                            </div>
+                        </div><!-- /col -->
+                    </div><!-- /row -->
+
+                    <!-- Patient City, State, Zip-->
+                    <div class="row">
+                        <!-- City -->
+                        <div class="col-sm-12 col-md-6">
+                            <div class="form-group has-error has-feedback">
+                                <input type="text" name="s4patient_city" 
+                                    [(ngModel)]="objUser.s4patient_city" 
+                                    class="form-control" 
+                                    placeholder="City" 
+                                    required 
+                                />
+                                <span class="glyphicon glyphicon-asterisk form-control-feedback"></span>
+                            </div><!-- /form-group -->
+                        </div><!-- /col -->
+
+                        <!-- State -->
+                        <div class="col-sm-12 col-md-3">
+                            <div class="form-group has-error has-feedback">
+                                <input type="text" name="s4patient_state" 
+                                    [(ngModel)]="objUser.s4patient_state" 
+                                    class="form-control" 
+                                    placeholder="State" 
+                                    required 
+                                />
+                                <span class="glyphicon glyphicon-asterisk form-control-feedback"></span>
+                            </div><!-- /form-group -->
+                        </div><!-- /col -->
+
+                        <!-- Zip -->
+                        <div class="col-sm-12 col-md-3">
+                            <div class="form-group has-error has-feedback">
+                                <input type="text" name="s4patient_zip" 
+                                    [(ngModel)]="objUser.s4patient_zip" 
+                                    class="form-control" 
+                                    placeholder="Zip" 
+                                    required 
+                                />
+                                <span class="glyphicon glyphicon-asterisk form-control-feedback"></span>
+                            </div><!-- /form-group -->
+                        </div><!-- /col -->
+                    </div><!-- /row -->
+
+                    <!-- Phone #s -->
+                    <div class="row">
+                        <!-- City -->
+                        <div class="col-sm-12 col-md-6">
+                            <div class="form-group has-error has-feedback">
+                                <input type="text" name="s4patient_homePhone" 
+                                    [(ngModel)]="objUser.s4patient_homePhone" 
+                                    class="form-control" 
+                                    placeholder="Home Phone" 
+                                    required 
+                                />
+                                <span class="glyphicon glyphicon-asterisk form-control-feedback"></span>
+                            </div><!-- /form-group -->
+                        </div><!-- /col -->
+
+                        <!-- State -->
+                        <div class="col-sm-12 col-md-6">
+                            <div class="form-group has-feedback">
+                                <input type="text" name="s4patient_altPhone" 
+                                    [(ngModel)]="objUser.s4patient_altPhone" 
+                                    class="form-control" 
+                                    placeholder="Alternate Phone Contact" 
+                                />
+                                <span class="glyphicon glyphicon-pencil form-control-feedback"></span>
+                            </div><!-- /form-group -->
+                        </div><!-- /col -->
+                    </div><!-- /row -->
+
+                    <!-- Type of Employment -->
+                    <div class="row">
+                        <!-- City -->
+                        <div class="col-sm-12 col-md-12">
+                            <div class="form-group has-feedback">
+                                <div class="input-group">
+                                    <span class="input-group-addon">Type of Employment</span>
+                                    <input type="text" name="s4empType" [(ngModel)]="objUser.s4empType" class="form-control" />
+                                    <span class="glyphicon glyphicon-pencil form-control-feedback"></span>
+                                </div><!-- /input-group -->
+                            </div>
+                        </div><!-- /col -->
+                    </div><!-- /row -->
+
                 </div><!-- /col -->
             </div><!-- /row -->
         </div><!-- /container -->
