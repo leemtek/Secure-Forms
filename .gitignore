@@ -44,3 +44,6 @@ Thumbs.db
 # Assets
 /apps/assets/bower_components
 /aws/s3/bower_components
+
+# Firebase
+firebase-debug.log
