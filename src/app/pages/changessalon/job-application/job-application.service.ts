@@ -37,6 +37,7 @@ export class JobApplicationService {
         s2student: "Choose", s2student_where: "From DuaneLeem.com",
         s2highSchool: "Choose", s2highSchool_name: null,
         s2college: "Choose", s2college_graduated: "na",
+        s2college_name: "Golden Gate University", s2college_major: "IT Management",
 
         /* ========================================================
             Final Section: Google reCaptcha

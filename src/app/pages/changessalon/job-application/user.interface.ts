@@ -21,6 +21,7 @@ export interface User {
     s2student: string; s2student_where: string;
     s2highSchool: string; s2highSchool_name: string;
     s2college: string; s2college_graduated: string;
+    s2college_name: string; s2college_major: string;
 
 
     /* ========================================================

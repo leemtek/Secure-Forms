@@ -195,7 +195,7 @@
                 <!-- College, Trade, or Vocational School -->
                 <div class="row margin-bottom-5">
                     <div class="col-md-6 text-right">
-                        Last grade completed in high school?
+                        Last year of college, trade or vocational school completed
                     </div><!-- /col -->
                     <div class="col-md-6">
                         <div class="form-group row">
@@ -222,6 +222,52 @@
                                         <option value="Yes">Yes</option>
                                         <option value="No">No</option>
                                     </select>
+                                </div>
+                            </div><!-- /col -->
+                        </div><!-- /form-group -->
+                    </div><!-- /col -->
+                </div><!-- /row -->
+
+                <!-- Name and Location of college, trade or vocational school. -->
+                <div class="row margin-bottom-5">
+                    <div class="col-md-6 text-right">
+                        Name and Location of college, trade or vocational school.
+                    </div><!-- /col -->
+                    <div class="col-md-6">
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                                <div class="form-group has-feedback">
+                                    <input type="text" class="form-control" 
+                                        name="s2college_name" 
+                                        aria-describedby="s2college_name" 
+                                        [(ngModel)]="objUser.s2college_name"
+                                        placeholder="Name and Location of college, trade or vocational school." 
+                                    />
+                                    <span class="glyphicon glyphicon-pencil form-control-feedback" aria-hidden="true"></span>
+                                    <span id="s2college_name" class="sr-only">(success)</span>
+                                </div>
+                            </div><!-- /col -->
+                        </div><!-- /form-group -->
+                    </div><!-- /col -->
+                </div><!-- /row -->
+
+                <!-- Major / Area of Study -->
+                <div class="row margin-bottom-5">
+                    <div class="col-md-6 text-right">
+                        Major / Area of Study / Degree / License
+                    </div><!-- /col -->
+                    <div class="col-md-6">
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                                <div class="form-group has-feedback">
+                                    <input type="text" class="form-control" 
+                                        name="s2college_major" 
+                                        aria-describedby="s2college_major" 
+                                        [(ngModel)]="objUser.s2college_major"
+                                        placeholder="Major / Area of Study / Degree / License" 
+                                    />
+                                    <span class="glyphicon glyphicon-pencil form-control-feedback" aria-hidden="true"></span>
+                                    <span id="s2college_major" class="sr-only">(success)</span>
                                 </div>
                             </div><!-- /col -->
                         </div><!-- /form-group -->
