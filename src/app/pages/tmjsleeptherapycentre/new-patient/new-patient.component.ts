@@ -21,7 +21,7 @@ export class NewPatientComponent {
     bower_components = constGlobals.bower_components;
     objUser; // holds user contents
 
-    constructor(private newPatientService: NewPatientService, private seoService: SeoService) {
+    constructor(public newPatientService: NewPatientService, private seoService: SeoService) {
         this.objUser = newPatientService.objUser;
 
         // SEO settings.
