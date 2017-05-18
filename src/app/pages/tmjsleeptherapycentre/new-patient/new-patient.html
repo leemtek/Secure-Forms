@@ -390,6 +390,64 @@
                         </div><!-- /col -->
                     </div><!-- /row -->
 
+                    <!-- Responsible Party -->
+                    <div class="row well" style="margin-top: 20px;">
+                        <div class="col-sm-12 col-md-12" style="margin-top: 15px;">
+                            <div class="form-group has-feedback">
+                                <input type="text" name="s4responsibleParty" 
+                                    [(ngModel)]="objUser.s4responsibleParty" 
+                                    class="form-control" 
+                                    placeholder="Responsible Party (if different than Patient)"
+                                />
+                                <span class="glyphicon glyphicon-pencil form-control-feedback"></span>
+                            </div>
+                        </div><!-- /col -->
+
+                        <!-- Address -->
+                        <div class="col-sm-12 col-md-12">
+                            <div class="form-group has-feedback">
+                                <input type="text" name="s4responsibleParty_address" 
+                                    [(ngModel)]="objUser.s4responsibleParty_address" 
+                                    class="form-control" 
+                                    placeholder="Address"
+                                />
+                                <span class="glyphicon glyphicon-pencil form-control-feedback"></span>
+                            </div>
+                        </div><!-- /col -->
+
+                        <!-- City, State, Zip -->
+                        <div class="col-sm-12 col-md-5">
+                            <div class="form-group has-feedback">
+                                <input type="text" name="s4responsibleParty_city" 
+                                    [(ngModel)]="objUser.s4responsibleParty_city" 
+                                    class="form-control" 
+                                    placeholder="City"
+                                />
+                                <span class="glyphicon glyphicon-pencil form-control-feedback"></span>
+                            </div>
+                        </div><!-- /col -->
+                        <div class="col-sm-12 col-md-5">
+                            <div class="form-group has-feedback">
+                                <input type="text" name="s4responsibleParty_state" 
+                                    [(ngModel)]="objUser.s4responsibleParty_state" 
+                                    class="form-control" 
+                                    placeholder="State"
+                                />
+                                <span class="glyphicon glyphicon-pencil form-control-feedback"></span>
+                            </div>
+                        </div><!-- /col -->
+                        <div class="col-sm-12 col-md-2">
+                            <div class="form-group has-feedback">
+                                <input type="text" name="s4responsibleParty_zip" 
+                                    [(ngModel)]="objUser.s4responsibleParty_zip" 
+                                    class="form-control" 
+                                    placeholder="State"
+                                />
+                                <span class="glyphicon glyphicon-pencil form-control-feedback"></span>
+                            </div>
+                        </div><!-- /col -->
+                    </div><!-- /row -->
+
                 </div><!-- /col -->
             </div><!-- /row -->
         </div><!-- /container -->

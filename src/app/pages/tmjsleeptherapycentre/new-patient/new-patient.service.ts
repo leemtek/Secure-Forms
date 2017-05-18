@@ -76,9 +76,9 @@ export class NewPatientService {
             s4empType: null,
 
             // Responsible Party
-            s4responsibleParty: null,
-            s4responsibleParty_address: null,
-            s4responsibleParty_city: null, s4responsibleParty_state: null, s4responsibleParty_zip: null,
+            s4responsibleParty: "Duane Leem",
+            s4responsibleParty_address: "123 Test Ln",
+            s4responsibleParty_city: "San Francisco", s4responsibleParty_state: "CA", s4responsibleParty_zip: "94531",
 
             // Family Dentist
             s4familyDentist: null, s4familyDentist_contact: null,
