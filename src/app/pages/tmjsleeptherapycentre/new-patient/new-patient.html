@@ -448,6 +448,67 @@
                         </div><!-- /col -->
                     </div><!-- /row -->
 
+                    <!-- Family Dentist -->
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <div class="form-group has-feedback">
+                                <div class="input-group">
+                                    <span class="input-group-addon">Family Dentist</span>
+                                    <input type="number" name="s4familyDentist" [(ngModel)]="objUser.s4familyDentist" class="form-control" placeholder="" />
+                                    <span class="glyphicon glyphicon-pencil form-control-feedback"></span>
+                                </div><!-- /input-group -->
+                            </div>
+                        </div><!-- /col -->
+
+                        <div class="col-sm-12 col-md-6">
+                            <div class="form-group has-feedback">
+                                <div class="input-group">
+                                    <span class="input-group-addon">Address and/or Phone</span>
+                                    <input type="text" name="s4familyDentist_contact" [(ngModel)]="objUser.s4familyDentist_contact" class="form-control" placeholder="" />
+                                    <span class="glyphicon glyphicon-pencil form-control-feedback"></span>
+                                </div><!-- /input-group -->
+                            </div>
+                        </div><!-- /col -->
+                    </div><!-- /row -->
+
+                    <!-- Family Physician -->
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <div class="form-group has-feedback">
+                                <div class="input-group">
+                                    <span class="input-group-addon">Family Physician</span>
+                                    <input type="number" name="s4familyPhysician" [(ngModel)]="objUser.s4familyPhysician" class="form-control" placeholder="" />
+                                    <span class="glyphicon glyphicon-pencil form-control-feedback"></span>
+                                </div><!-- /input-group -->
+                            </div>
+                        </div><!-- /col -->
+
+                        <div class="col-sm-12 col-md-6">
+                            <div class="form-group  has-feedback">
+                                <div class="input-group">
+                                    <span class="input-group-addon">Address and/or Phone</span>
+                                    <input type="text" name="s4familyPhysician_contact" [(ngModel)]="objUser.s4familyPhysician_contact" class="form-control" placeholder="" />
+                                    <span class="glyphicon glyphicon-pencil form-control-feedback"></span>
+                                </div><!-- /input-group -->
+                            </div>
+                        </div><!-- /col -->
+                    </div><!-- /row -->
+
+                    <!-- Reason for Appointment -->
+                    <div class="row margin-bottom-10">
+                        <div class="col-md-6 col-md-offset-3">
+                            <div class="input-group">
+                                <span class="input-group-addon">Reason for this Appointment</span>
+                                <select name="s4reasonForAppt" class="form-control" [(ngModel)]="objUser.s4reasonForAppt">
+                                    <option value="na">Please select</option>
+                                    <option value="Pain">Pain</option>
+                                    <option value="Sleep/Airway">Sleep/Airway</option>
+                                    <option value="Orthodontics">Orthodontics</option>
+                                    <option value="Unknown">Unknown</option>
+                                </select>
+                            </div>
+                        </div><!-- /col -->
+                    </div><!-- /row -->
                 </div><!-- /col -->
             </div><!-- /row -->
         </div><!-- /container -->

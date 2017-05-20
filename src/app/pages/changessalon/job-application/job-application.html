@@ -273,6 +273,168 @@
                         </div><!-- /form-group -->
                     </div><!-- /col -->
                 </div><!-- /row -->
+
+                <!-- Why would you like to work at changes? -->
+                <div class="row margin-bottom-5">
+                    <div class="col-md-6 text-right">
+                        Why would you like to work at changes?
+                    </div><!-- /col -->
+                    <div class="col-md-6">
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                                <div class="form-group has-feedback">
+                                    <input type="text" class="form-control" 
+                                        name="s2why" 
+                                        aria-describedby="s2why" 
+                                        [(ngModel)]="objUser.s2why"
+                                        placeholder="" 
+                                    />
+                                    <span class="glyphicon glyphicon-pencil form-control-feedback" aria-hidden="true"></span>
+                                    <span id="s2why" class="sr-only">(success)</span>
+                                </div>
+                            </div><!-- /col -->
+                        </div><!-- /form-group -->
+                    </div><!-- /col -->
+                </div><!-- /row -->
+
+                <!-- Start Date -->
+                <div class="row margin-bottom-5">
+                    <div class="col-md-6 text-right">
+                        Date you can start
+                    </div><!-- /col -->
+                    <div class="col-md-6">
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                                <div class="form-group has-feedback">
+                                    <input type="text" class="form-control" 
+                                        name="s2startDate" 
+                                        aria-describedby="s2startDate" 
+                                        [(ngModel)]="objUser.s2startDate"
+                                        placeholder="" 
+                                        required
+                                    />
+                                    <span class="glyphicon glyphicon-pencil form-control-feedback" aria-hidden="true"></span>
+                                    <span id="s2startDate" class="sr-only">(success)</span>
+                                </div>
+                            </div><!-- /col -->
+                        </div><!-- /form-group -->
+                    </div><!-- /col -->
+                </div><!-- /row -->
+
+                <!-- Salary Desired -->
+                <div class="row margin-bottom-5">
+                    <div class="col-md-6 text-right">
+                        Salary Desired
+                    </div><!-- /col -->
+                    <div class="col-md-6">
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                                <div class="form-group has-feedback">
+                                    <input type="text" class="form-control" 
+                                        name="s2desiredSalary" 
+                                        aria-describedby="s2desiredSalary" 
+                                        [(ngModel)]="objUser.s2desiredSalary"
+                                        placeholder="" 
+                                        required
+                                    />
+                                    <span class="glyphicon glyphicon-pencil form-control-feedback" aria-hidden="true"></span>
+                                    <span id="s2desiredSalary" class="sr-only">(success)</span>
+                                </div>
+                            </div><!-- /col -->
+                        </div><!-- /form-group -->
+                    </div><!-- /col -->
+                </div><!-- /row -->
+
+                <!-- Maximum Hours available per week -->
+                <div class="row margin-bottom-5">
+                    <div class="col-md-6 text-right">
+                        Maximum Hours available per week
+                    </div><!-- /col -->
+                    <div class="col-md-6">
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                                <div class="form-group has-feedback">
+                                    <input type="text" class="form-control" 
+                                        name="s2maximumHours" 
+                                        aria-describedby="s2maximumHours" 
+                                        [(ngModel)]="objUser.s2maximumHours"
+                                        placeholder="" 
+                                        required
+                                    />
+                                    <span class="glyphicon glyphicon-pencil form-control-feedback" aria-hidden="true"></span>
+                                    <span id="s2maximumHours" class="sr-only">(success)</span>
+                                </div>
+                            </div><!-- /col -->
+                        </div><!-- /form-group -->
+                    </div><!-- /col -->
+                </div><!-- /row -->
+
+                <!-- Performing Essential Functions -->
+                <div class="row margin-bottom-5">
+                    <div class="col-md-6 text-right">
+                        Are you able to perform the essential functions of the job with or without a reasonable accommodation?
+                    </div><!-- /col -->
+                    <div class="col-md-6">
+                        <div class="form-group has-feedback">
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    {{objUser.s2essentialFunctions}}
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="s2essentialFunctions">
+                                    <li><a (click)="objUser.s2essentialFunctions = 'Yes'">Yes</a></li>
+                                    <li><a (click)="objUser.s2essentialFunctions = 'No'">No</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!-- /col -->
+                </div><!-- /row -->
+
+                <!-- If No to Performing Essential Functions -->
+                <div class="row margin-bottom-5">
+                    <div class="col-md-6 text-right">
+                        If you answered “No”, please describe the function(s) you are unable to perform with 
+                        or without a reasonable accommodation
+                    </div><!-- /col -->
+                    <div class="col-md-6">
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                                <div class="form-group has-feedback">
+                                    <input type="text" class="form-control" 
+                                        name="s2essentialFunctions_why" 
+                                        aria-describedby="s2essentialFunctions_why" 
+                                        [(ngModel)]="objUser.s2essentialFunctions_why"
+                                        placeholder="" 
+                                        required
+                                    />
+                                    <span class="glyphicon glyphicon-pencil form-control-feedback" aria-hidden="true"></span>
+                                    <span id="s2essentialFunctions_why" class="sr-only">(success)</span>
+                                </div>
+                            </div><!-- /col -->
+                        </div><!-- /form-group -->
+                    </div><!-- /col -->
+                </div><!-- /row -->
+
+                <!-- Applied Before -->
+                <div class="row margin-bottom-5">
+                    <div class="col-md-6 text-right">
+                        Have you ever applied here before?
+                    </div><!-- /col -->
+                    <div class="col-md-6">
+                        <div class="form-group has-feedback">
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    {{objUser.s2appliedBefore}}
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="s2appliedBefore">
+                                    <li><a (click)="objUser.s2appliedBefore = 'Yes'">Yes</a></li>
+                                    <li><a (click)="objUser.s2appliedBefore = 'No'">No</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!-- /col -->
+                </div><!-- /row -->
             </div><!-- /col -->
         </div><!-- /row -->
     </section>

@@ -38,6 +38,12 @@ export class JobApplicationService {
         s2highSchool: "Choose", s2highSchool_name: null,
         s2college: "Choose", s2college_graduated: "na",
         s2college_name: "Golden Gate University", s2college_major: "IT Management",
+        s2why: null,
+        s2startDate: null, s2desiredSalary: null,
+        s2maximumHours: null,
+        s2essentialFunctions: "Choose",
+        s2essentialFunctions_why: null,
+        s2appliedBefore: "Choose",
 
         /* ========================================================
             Final Section: Google reCaptcha

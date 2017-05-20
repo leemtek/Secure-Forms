@@ -22,6 +22,13 @@ export interface User {
     s2highSchool: string; s2highSchool_name: string;
     s2college: string; s2college_graduated: string;
     s2college_name: string; s2college_major: string;
+    s2why: string;
+    s2startDate: string; s2desiredSalary: string;
+    s2maximumHours: string;
+    s2essentialFunctions: string;
+    s2essentialFunctions_why: string;
+    s2appliedBefore: string;
+
 
 
     /* ========================================================

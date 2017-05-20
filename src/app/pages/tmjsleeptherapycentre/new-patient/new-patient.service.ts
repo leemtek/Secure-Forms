@@ -83,7 +83,7 @@ export class NewPatientService {
             // Family Dentist
             s4familyDentist: null, s4familyDentist_contact: null,
             s4familyPhysician: null, s4familyPhysician_contact: null,
-            s4reasonForAppt: null,
+            s4reasonForAppt: "na",
 
         
         /* ========================================================
