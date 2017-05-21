@@ -5,9 +5,10 @@
         Section 1: Personal Information
     ================================================================== -->
     <section class="container">
-        <div class="row margin-bottom-40">
+        <div class="row margin-bottom-20">
             <div class="col-md-10 col-md-offset-1">
                 <h2 class="text-center">Personal Information</h2>
+                <div class="text-center lead">All fields are required.</div>
             </div><!-- /col -->
         </div><!-- /row -->
 
@@ -16,50 +17,50 @@
                 <!-- Name & Date -->
                 <div class="row margin-bottom-10">
                     <div class="col-md-8">
-                        <input type="text" name="s1FullName" class="form-control" placeholder="Full Name" />
+                        <input type="text" name="s1FullName" class="form-control" placeholder="Full Name" required />
                     </div><!-- /col -->
                     <div class="col-md-4">
-                        <input type="text" name="s1Date" class="form-control" placeholder="Date: 5/14/2017" />
+                        <input type="text" name="s1Date" class="form-control" placeholder="Date: 5/14/2017" required />
                     </div><!-- /col -->
                 </div><!-- /row -->
 
                 <!-- Home & Mobile Phone -->
                 <div class="row margin-bottom-10">
                     <div class="col-md-6">
-                        <input type="text" name="s1Phone_home" class="form-control" placeholder="Home Phone" />
+                        <input type="text" name="s1Phone_home" class="form-control" placeholder="Main Phone (Required)" />
                     </div><!-- /col -->
                     <div class="col-md-6">
-                        <input type="text" name="s1Phone_mobile" class="form-control" placeholder="Mobile Phone" />
+                        <input type="text" name="s1Phone_mobile" class="form-control" placeholder="Mobile Phone (Optional)" />
                     </div><!-- /col -->
                 </div><!-- /row -->
 
                 <!-- Email & SSN -->
                 <div class="row margin-bottom-10">
                     <div class="col-md-6">
-                        <input type="text" name="s1Email" class="form-control" placeholder="Email Address" />
+                        <input type="text" name="s1Email" class="form-control" placeholder="Email Address" required />
                     </div><!-- /col -->
                     <div class="col-md-6">
-                        <input type="text" name="s1SSN" class="form-control" placeholder="Social Security Number" />
+                        <input type="text" name="s1SSN" class="form-control" placeholder="Social Security Number" required />
                     </div><!-- /col -->
                 </div><!-- /row -->
 
                 <!-- Address -->
                 <div class="row margin-bottom-10">
                     <div class="col-md-12">
-                        <input type="text" name="s1Address" class="form-control" placeholder="Address" />
+                        <input type="text" name="s1Address" class="form-control" placeholder="Address" required />
                     </div><!-- /col -->
                 </div><!-- /row -->
 
                 <!-- State, City, Zip -->
                 <div class="row margin-bottom-10">
                     <div class="col-md-4">
-                        <input type="text" name="s1State" class="form-control" placeholder="State: CA" />
+                        <input type="text" name="s1State" class="form-control" placeholder="State: CA" required />
                     </div><!-- /col -->
                     <div class="col-md-4">
-                        <input type="text" name="s1City" class="form-control" placeholder="City" />
+                        <input type="text" name="s1City" class="form-control" placeholder="City" required />
                     </div><!-- /col -->
                     <div class="col-md-4">
-                        <input type="text" name="s1Zip" class="form-control" placeholder="Zip" />
+                        <input type="text" name="s1Zip" class="form-control" placeholder="Zip" required />
                     </div><!-- /col -->
                 </div><!-- /row -->
             </div><!-- /col -->
@@ -74,7 +75,7 @@
                     </div><!-- /col -->
                     <div class="col-md-6">
                         <div class="form-group has-feedback">
-                            <input type="text" class="form-control" name="s2position" aria-describedby="s2position" [(ngModel)]="objUser.s2position" />
+                            <input type="text" class="form-control" name="s2position" aria-describedby="s2position" [(ngModel)]="objUser.s2position" required />
                             <span class="glyphicon glyphicon-pencil form-control-feedback" aria-hidden="true"></span>
                             <span id="s2position" class="sr-only">(success)</span>
                         </div>
@@ -437,6 +438,87 @@
                 </div><!-- /row -->
             </div><!-- /col -->
         </div><!-- /row -->
+    </section>
+
+    <!-- Work History -->
+    <section class="bg-color-lightgrey margin-bottom-40 padding40-top-bottom">
+        <div class="container">
+            <div class="row margin-bottom-20">
+                <div class="col-md-10 col-md-offset-1">
+                    <h2 class="text-center">Work History</h2>
+                    <div class="lead text-center">
+                        List all employers, beginning with your current or most recent employer. <br />
+                        <span class="text-smaller text-italics">* Click each one to expand.</span>
+                    </div>
+                </div><!-- /col -->
+            </div><!-- /row -->
+
+            <div class="row margin-bottom-40">
+                <div class="col-md-10 col-md-offset-1">
+                    <!-- Company 1 -->
+                    <div class="panel-group">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" href="#companyInformation1" class="text-decoration-none"><span class="glyphicon glyphicon-briefcase" style="margin-right: 5px;"></span>Company Information 1</a>
+                                </h4>
+                            </div>
+                            <div id="companyInformation1" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    <!-- Company Name -->
+                                    <div class="row margin-bottom-10">
+                                        <div class="col-md-12">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">Company Name</span>
+                                                <input name="s3companyName_1" class="form-control" />
+                                            </div>
+                                        </div><!-- /col -->
+                                    </div><!-- /row -->
+
+                                    <!-- Address -->
+                                    <div class="row margin-bottom-10">
+                                        <div class="col-md-12">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">Address</span>
+                                                <input name="s3companyAddress_1" class="form-control" />
+                                            </div>
+                                        </div><!-- /col -->
+                                    </div><!-- /row -->
+
+                                    <!-- Supervisor Name | Can Contact? -->
+
+                                    <!-- Phone Number | Employment Dates -->
+
+                                    <!-- Job Title & Duties -->
+                                    <div class="row margin-bottom-10">
+                                        <div class="col-md-12">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">Job Title and Duties</span>
+                                                <input name="s3jobTitleDuties_1" class="form-control" />
+                                            </div>
+                                        </div><!-- /col -->
+                                    </div><!-- /row -->
+
+                                    <!-- Reason for Leaving -->
+                                    <div class="row margin-bottom-10">
+                                        <div class="col-md-12">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">Reason for Leaving</span>
+                                                <input name="s3reasonForLeaving_1" class="form-control" />
+                                            </div>
+                                        </div><!-- /col -->
+                                    </div><!-- /row -->
+
+                                    <!-- Salary Starting and Ending -->
+
+
+                                </div><!-- /panel-body -->
+                            </div><!-- /panel-collapse -->
+                        </div>
+                    </div>
+                </div><!-- /col -->
+            </div><!-- /row -->
+        </div><!-- /container -->
     </section>
 
 

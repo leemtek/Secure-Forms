@@ -12,7 +12,9 @@ declare var $:any;
     selector: "changessalon-job-application",
     templateUrl: "job-application.html",
     styles: [`
-        h2 { font-size: 24px; }
+        h2 { font-size: 24px; font-weight: bold; }
+
+        .lead { font-size: 18px; }
     `],
     providers: [JobApplicationService, SeoService]
 })
