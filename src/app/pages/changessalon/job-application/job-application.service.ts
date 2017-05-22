@@ -45,6 +45,20 @@ export class JobApplicationService {
         s2essentialFunctions_why: null,
         s2appliedBefore: "Choose",
 
+
+        /* ========================================================
+            Section 3: Work History
+        ======================================================== */
+        // Company 1
+        s3companyName_1: null,
+        s3companyAddress_1: null,
+        s3supervisorName_1: null, s3supervisorContact_1: "Choose",
+        s3phone_1: null, s3employmentDate_from_1: null, s3employmentDate_to_1: null,
+        s3jobDutiesandTitle_1: null,
+        s3reasonLeaving_1: null,
+        s3salary_starting_1: null, s3salary_ending_1: null,
+        
+
         /* ========================================================
             Final Section: Google reCaptcha
         ======================================================== */

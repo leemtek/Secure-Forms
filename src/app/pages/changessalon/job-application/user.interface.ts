@@ -30,6 +30,17 @@ export interface User {
     s2appliedBefore: string;
 
 
+    /* ========================================================
+        Section 3: Work History
+    ======================================================== */
+    s3companyName_1;
+    s3companyAddress_1;
+    s3supervisorName_1; s3supervisorContact_1;
+    s3phone_1; s3employmentDate_from_1; s3employmentDate_to_1;
+    s3jobDutiesandTitle_1;
+    s3reasonLeaving_1;
+    s3salary_starting_1; s3salary_ending_1;
+
 
     /* ========================================================
         Final Section: Signature & Google reCaptcha
