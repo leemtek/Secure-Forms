@@ -521,12 +521,60 @@
     <!-- ==================================================================
         Section 5: Chief Complaint
     ================================================================== -->
-    <section class="padding40-top-bottom">
+    <section id="section5" class="padding40-top-bottom">
         <div class="container">
             <div class="row margin-bottom-40">
                 <div class="col-md-10 col-md-offset-1">
                     <h2 class="text-center text-bold">What is the chief complain for which you are seeking treatment in our office?</h2>
                     <div class="lead text-center margin-bottom-20">Note: Please identify your chief complaint as #1, list all other symptoms in priority #2-9.</div>
+                </div><!-- /col -->
+            </div><!-- /row -->
+
+            <div id="s5columns" class="row margin-bottom-40">
+                <div class="col-md-6 col-xs-12">
+                    <!-- Complaint Item -->
+                    <div class="row margin-bottom-10">
+                        <div class="col-md-6 text-right">
+                            <label for="s5headachePain">Headache Pain</label>
+                        </div>
+                        <div class="col-md-6">
+                            <select name="s5headachePain" class="form-control" [(ngModel)]="objUser.s5headachePain">
+                                <option value="na">Please select</option>
+                                <option value="Recent">Recent</option>
+                                <option value="Chronic">Chronic (6 months+)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Complaint Item -->
+                    <div class="row margin-bottom-10">
+                        <div class="col-md-6 text-right">
+                            <label for="s5earPain">Ear Pain</label>
+                        </div>
+                        <div class="col-md-6">
+                            <select name="s5earPain" class="form-control" [(ngModel)]="objUser.s5earPain">
+                                <option value="na">Please select</option>
+                                <option value="Recent">Recent</option>
+                                <option value="Chronic">Chronic (6 months+)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Complaint Item -->
+                    <div class="row margin-bottom-10">
+                        <div class="col-md-6 text-right">
+                            <label for="s5jawPain">Jaw Pain</label>
+                        </div>
+                        <div class="col-md-6">
+                            <select name="s5jawPain" class="form-control" [(ngModel)]="objUser.s5jawPain">
+                                <option value="na">Please select</option>
+                                <option value="Recent">Recent</option>
+                                <option value="Chronic">Chronic (6 months+)</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                   
                 </div><!-- /col -->
             </div><!-- /row -->
         </div><!-- /container -->

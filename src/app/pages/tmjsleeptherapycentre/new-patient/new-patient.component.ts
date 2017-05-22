@@ -13,6 +13,13 @@ declare var $:any;
     templateUrl: "new-patient.html",
     styles: [`
         h2 { font-size: 24px; }
+
+        #section5 #s5columns label {
+            padding-top: 6px;
+            font-weight: normal;
+        }
+
+        .control-label { vertical-align: middle; }
     `],
     providers: [NewPatientService, SeoService]
 })

@@ -85,6 +85,63 @@ export class NewPatientService {
             s4familyPhysician: null, s4familyPhysician_contact: null,
             s4reasonForAppt: "na",
 
+
+            /* ========================================================
+                Section 5: Chief Complaint
+            ======================================================== */
+            s5headachePain: "na",
+            s5earPain: "na",
+            s5jawPain: "na",
+            s5swellingAnklesFeed: "na",
+            s5morningHoarseness: "na",
+            s5painChewing: "na",
+            s5dryMouth: "na",
+            s5facialPain: "na",
+            s5fatigue: "na",
+            s5eyePain: "na",
+            s5difficultyFallingAsleep: "na",
+            s5throatPain: "na",
+            s5tossingTurning: "na",
+            s5neckPain: "na",
+            s5repeatedlyAwakening: "na",
+            s5shoulderPain: "na",
+            s5unrefreshed: "na",
+            s5backPain: "na",
+            s5significantDaytimeDrowsiness: "na",
+            s5limitedOpenMouth: "na",
+            s5snoring: "na",
+            s5jawJointLocking: "na",
+            s5affectSleepOthers: "na",
+            s5jawJointNoises: "na",
+            s5gaspingWaking: "na",
+            s5earCongestion: "na",
+            s5stopBreathing: "na",
+            s5sinusCongestion: "na",
+            s5nightChokingSpells: "na",
+            s5diziness: "na",
+            s5cpap: "na",
+            s5tinnitus: "na",
+            s5toothGrinding: "na",
+            s5muscleTwitching: "na",
+            s5teethCrowding: "na",
+            s5visionProblems: "na",
+            s5other: "na",
+
+            // Do you have concerns in any of these areas?
+            s5generalAppearance: "na",
+            s5overbite: "na",
+            s5abilityToFunction: "na",
+            s5smile: "na",
+
+            // More
+            s5comments: "na",
+            s5affectDailyLife: "na",
+            s5resultsFromTreatment: "na",
+
+            // Signature
+            s5PatientSignature: "na",
+            s5SignatureDate: "na",
+
         
         /* ========================================================
             Final Section: Google reCaptcha
