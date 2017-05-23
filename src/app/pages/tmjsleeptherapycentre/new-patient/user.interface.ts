@@ -75,31 +75,34 @@ export interface User {
     s5headachePain;
     s5earPain;
     s5jawPain;
+    s5painChewing;
+    s5facialPain;
+    s5eyePain;
+    s5throatPain;
+    s5neckPain;
+    s5shoulderPain;
+    s5backPain;
+    s5limitedOpenMouth;
+    s5jawJointLocking;
+    s5jawJointNoises;
+    s5earCongestion;
+    s5sinusCongestion;
+
+
+
     s5swellingAnklesFeed;
     s5morningHoarseness;
-    s5painChewing;
     s5dryMouth;
-    s5facialPain;
     s5fatigue;
-    s5eyePain;
     s5difficultyFallingAsleep;
-    s5throatPain;
     s5tossingTurning;
-    s5neckPain;
     s5repeatedlyAwakening;
-    s5shoulderPain;
     s5unrefreshed;
-    s5backPain;
     s5significantDaytimeDrowsiness;
-    s5limitedOpenMouth;
     s5snoring;
-    s5jawJointLocking;
     s5affectSleepOthers;
-    s5jawJointNoises;
     s5gaspingWaking;
-    s5earCongestion;
     s5stopBreathing;
-    s5sinusCongestion;
     s5nightChokingSpells;
     s5diziness;
     s5cpap;
