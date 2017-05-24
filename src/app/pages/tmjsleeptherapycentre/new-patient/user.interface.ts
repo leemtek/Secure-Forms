@@ -72,6 +72,7 @@ export interface User {
     /* ========================================================
         Section 5: Chief Complaint
     ======================================================== */
+    // Left Column
     s5headachePain;
     s5earPain;
     s5jawPain;
@@ -87,15 +88,23 @@ export interface User {
     s5jawJointNoises;
     s5earCongestion;
     s5sinusCongestion;
+    s5diziness;
+    s5tinnitus;
+    s5muscleTwitching;
+    s5visionProblems;
 
-
-
+    // Right Column
+    s5kickingJerkingLeg;
     s5swellingAnklesFeed;
     s5morningHoarseness;
     s5dryMouth;
     s5fatigue;
     s5difficultyFallingAsleep;
     s5tossingTurning;
+
+    
+
+    
     s5repeatedlyAwakening;
     s5unrefreshed;
     s5significantDaytimeDrowsiness;
@@ -104,13 +113,9 @@ export interface User {
     s5gaspingWaking;
     s5stopBreathing;
     s5nightChokingSpells;
-    s5diziness;
     s5cpap;
-    s5tinnitus;
     s5toothGrinding;
-    s5muscleTwitching;
     s5teethCrowding;
-    s5visionProblems;
     s5other;
 
     // Do you have concerns in any of these areas?

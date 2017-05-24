@@ -89,6 +89,7 @@ export class NewPatientService {
             /* ========================================================
                 Section 5: Chief Complaint
             ======================================================== */
+            // Left Column
             s5headachePain: "na",
             s5earPain: "na",
             s5jawPain: "na",
@@ -104,15 +105,22 @@ export class NewPatientService {
             s5jawJointNoises: "na",
             s5earCongestion: "na",
             s5sinusCongestion: "na",
+            s5diziness: "na",
+            s5tinnitus: "na",
+            s5muscleTwitching: "na",
+            s5visionProblems: "na",
 
-
-
+            // Right Column
+            s5kickingJerkingLeg: "na",
             s5swellingAnklesFeed: "na",
             s5morningHoarseness: "na",
             s5dryMouth: "na",
             s5fatigue: "na",
             s5difficultyFallingAsleep: "na",
             s5tossingTurning: "na",
+
+
+
             s5repeatedlyAwakening: "na",
             s5unrefreshed: "na",
             s5significantDaytimeDrowsiness: "na",
@@ -121,13 +129,9 @@ export class NewPatientService {
             s5gaspingWaking: "na",
             s5stopBreathing: "na",
             s5nightChokingSpells: "na",
-            s5diziness: "na",
             s5cpap: "na",
-            s5tinnitus: "na",
             s5toothGrinding: "na",
-            s5muscleTwitching: "na",
             s5teethCrowding: "na",
-            s5visionProblems: "na",
             s5other: "na",
 
             // Do you have concerns in any of these areas?
