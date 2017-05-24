@@ -57,6 +57,15 @@ export class JobApplicationService {
         s3jobDutiesandTitle_1: null,
         s3reasonLeaving_1: null,
         s3salary_starting_1: null, s3salary_ending_1: null,
+
+        // Company 2
+        s3companyName_2: null,
+        s3companyAddress_2: null,
+        s3supervisorName_2: null, s3supervisorContact_2: "Choose",
+        s3phone_2: null, s3employmentDate_from_2: null, s3employmentDate_to_2: null,
+        s3jobDutiesandTitle_2: null,
+        s3reasonLeaving_2: null,
+        s3salary_starting_2: null, s3salary_ending_2: null,
         
 
         /* ========================================================

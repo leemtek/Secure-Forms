@@ -568,7 +568,116 @@
                     </div>
 
                     <!-- Company 2 -->
-                    
+                    <div class="panel-group">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" href="#companyInformation2" class="text-decoration-none"><span class="glyphicon glyphicon-briefcase" style="margin-right: 5px;"></span>Company Information 2</a>
+                                </h4>
+                            </div>
+                            <div id="companyInformation2" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <!-- Company Name -->
+                                    <div class="row margin-bottom-10">
+                                        <div class="col-md-12">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">Company Name</span>
+                                                <input name="s3companyName_2" class="form-control" [(ngModel)]="objUser.s3companyName_2" />
+                                            </div>
+                                        </div><!-- /col -->
+                                    </div><!-- /row -->
+
+                                    <!-- Address -->
+                                    <div class="row margin-bottom-10">
+                                        <div class="col-md-12">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">Address</span>
+                                                <input name="s3companyAddress_2" class="form-control" [(ngModel)]="objUser.s3companyAddress_2" />
+                                            </div>
+                                        </div><!-- /col -->
+                                    </div><!-- /row -->
+
+                                    <!-- Supervisor Name | Can Contact? -->
+                                    <div class="row margin-bottom-10">
+                                        <div class="col-md-8 col-xs-12">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">Supervisor Name</span>
+                                                <input name="s3supervisorName_2" class="form-control" [(ngModel)]="objUser.s3supervisorName_2" />
+                                            </div>
+                                        </div><!-- /col -->
+                                        <div class="col-md-4 col-xs-12">
+                                            <div class="input-group has-feedback">
+                                                <div class="dropdown">
+                                                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                        <span class="padding-right-10">May we contact?</span>  <span class="padding-right-10">|</span> <span>{{objUser.s3supervisorContact_2}}</span>
+                                                        <span class="caret"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu" aria-labelledby="s3supervisorContact_2">
+                                                        <li><a (click)="objUser.s3supervisorContact_2 = 'Yes'">Yes</a></li>
+                                                        <li><a (click)="objUser.s3supervisorContact_2 = 'No'">No</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div><!-- /form-group -->
+                                        </div><!-- /col -->
+                                    </div><!-- /row -->
+                                    
+                                    <!-- Phone Number | Employment Dates -->
+                                    <div class="row margin-bottom-10">
+                                        <!-- Phone Number -->
+                                        <div class="col-md-12">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">Phone Number</span>
+                                                <input name="s3phone_2" class="form-control" [(ngModel)]="objUser.s3phone_2" />
+                                            </div>
+                                        </div><!-- /col -->
+                                    </div><!-- /row -->
+
+                                    <!-- Employment Dates -->
+                                    <div class="row margin-bottom-10">
+                                        <!-- Employment From -->
+                                        <div class="col-md-6">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">Employment From</span>
+                                                <input type="date" name="s3employmentDate_from_2" class="form-control" [(ngModel)]="objUser.s3employmentDate_from_2" placeholder="Employment From" />
+                                            </div>
+                                        </div><!-- /col -->
+
+                                        <!-- Employment To -->
+                                        <div class="col-md-6">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">Employment To</span>
+                                                <input type="date" name="s3employmentDate_to_2" class="form-control" [(ngModel)]="objUser.s3employmentDate_to_2" placeholder="Employment To" />
+                                            </div>
+                                        </div><!-- /col -->
+                                    </div><!-- /row -->
+
+                                    <!-- Job Title & Duties -->
+                                    <div class="row margin-bottom-10">
+                                        <div class="col-md-12">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">Job Title and Duties</span>
+                                                <input name="s3jobDutiesandTitle_2" class="form-control" />
+                                            </div>
+                                        </div><!-- /col -->
+                                    </div><!-- /row -->
+
+                                    <!-- Reason for Leaving -->
+                                    <div class="row margin-bottom-10">
+                                        <div class="col-md-12">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">Reason for Leaving</span>
+                                                <input name="s3reasonLeaving_2" class="form-control" />
+                                            </div>
+                                        </div><!-- /col -->
+                                    </div><!-- /row -->
+
+                                    <!-- Salary Starting and Ending -->
+
+
+                                </div><!-- /panel-body -->
+                            </div><!-- /panel-collapse -->
+                        </div>
+                    </div>
                 </div><!-- /col -->
             </div><!-- /row -->
         </div><!-- /container -->

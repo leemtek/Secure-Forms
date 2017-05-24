@@ -33,6 +33,7 @@ export interface User {
     /* ========================================================
         Section 3: Work History
     ======================================================== */
+    // Company 1
     s3companyName_1;
     s3companyAddress_1;
     s3supervisorName_1; s3supervisorContact_1;
@@ -40,6 +41,15 @@ export interface User {
     s3jobDutiesandTitle_1;
     s3reasonLeaving_1;
     s3salary_starting_1; s3salary_ending_1;
+
+    // Company 2
+    s3companyName_2;
+    s3companyAddress_2;
+    s3supervisorName_2; s3supervisorContact_2;
+    s3phone_2; s3employmentDate_from_2; s3employmentDate_to_2;
+    s3jobDutiesandTitle_2;
+    s3reasonLeaving_2;
+    s3salary_starting_2; s3salary_ending_2;
 
 
     /* ========================================================
