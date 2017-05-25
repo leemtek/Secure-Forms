@@ -101,10 +101,6 @@ export interface User {
     s5fatigue;
     s5difficultyFallingAsleep;
     s5tossingTurning;
-
-    
-
-    
     s5repeatedlyAwakening;
     s5unrefreshed;
     s5significantDaytimeDrowsiness;

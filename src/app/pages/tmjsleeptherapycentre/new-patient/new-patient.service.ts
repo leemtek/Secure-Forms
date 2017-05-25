@@ -118,9 +118,6 @@ export class NewPatientService {
             s5fatigue: "na",
             s5difficultyFallingAsleep: "na",
             s5tossingTurning: "na",
-
-
-
             s5repeatedlyAwakening: "na",
             s5unrefreshed: "na",
             s5significantDaytimeDrowsiness: "na",
@@ -132,7 +129,7 @@ export class NewPatientService {
             s5cpap: "na",
             s5toothGrinding: "na",
             s5teethCrowding: "na",
-            s5other: "na",
+            s5other: null,
 
             // Do you have concerns in any of these areas?
             s5generalAppearance: "na",
