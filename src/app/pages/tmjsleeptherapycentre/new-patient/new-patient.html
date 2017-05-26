@@ -1074,7 +1074,22 @@
             </div><!-- /row -->
 
             <div class="row margin-bottom-40">
-                <div class="lead text-center margin-bottom-20">Do you have concerns in any of these areas?</div>
+                <div class="col-xs-12">
+                    <div class="lead text-center margin-0">Do you have concerns in any of these areas?</div>
+                    <div class="text-center text-smaller">* Hold CTRL or CMD while selecting (for multiple selections)</div>
+                </div>
+            </div><!-- /row -->
+
+            <!-- Selection of Chief Complaints -->
+            <div class="row margin-bottom-40">
+                <div class="col-md-4 col-md-offset-4">
+                    <select name="s5" class="form-control" multiple [(ngModel)]="objUser.s5concerns">
+                        <option value="General Appearance">General Appearance</option>
+                        <option value="Overbite">Overbite</option>
+                        <option value="Ability to Function">Ability to Function</option>
+                        <option value="Smile">Smile</option>
+                    </select>
+                </div><!-- /col -->
             </div><!-- /row -->
         </div><!-- /container -->
     </section>

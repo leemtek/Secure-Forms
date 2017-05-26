@@ -115,10 +115,7 @@ export interface User {
     s5other;
 
     // Do you have concerns in any of these areas?
-    s5generalAppearance;
-    s5overbite;
-    s5abilityToFunction;
-    s5smile;
+    s5concerns;
 
     // More
     s5comments;

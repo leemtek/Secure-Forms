@@ -132,10 +132,7 @@ export class NewPatientService {
             s5other: null,
 
             // Do you have concerns in any of these areas?
-            s5generalAppearance: "na",
-            s5overbite: "na",
-            s5abilityToFunction: "na",
-            s5smile: "na",
+            s5concerns: ["General Appearance", "Smile"],
 
             // More
             s5comments: "na",
