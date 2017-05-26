@@ -51,6 +51,15 @@ export interface User {
     s3reasonLeaving_2;
     s3salary_starting_2; s3salary_ending_2;
 
+    // Company 3
+    s3companyName_3;
+    s3companyAddress_3;
+    s3supervisorName_3; s3supervisorContact_3;
+    s3phone_3; s3employmentDate_from_3; s3employmentDate_to_3;
+    s3jobDutiesandTitle_3;
+    s3reasonLeaving_3;
+    s3salary_starting_3; s3salary_ending_3;
+
 
     /* ========================================================
         Final Section: Signature & Google reCaptcha
