@@ -559,7 +559,20 @@
                                     </div><!-- /row -->
 
                                     <!-- Salary Starting and Ending -->
-
+                                    <div class="row margin-bottom-10">
+                                        <div class="col-sm-12 col-md-6">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">Starting Salary</span>
+                                                <input name="s3salary_starting_1" class="form-control" [(ngModel)]="objUser.s3salary_starting_1" />
+                                            </div><!-- /input-group -->
+                                        </div><!-- /col -->
+                                        <div class="col-sm-12 col-md-6">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">Ending Salary</span>
+                                                <input name="s3salary_ending_1" class="form-control" [(ngModel)]="objUser.s3salary_ending_1" />
+                                            </div><!-- /input-group -->
+                                        </div><!-- /col -->
+                                    </div><!-- /row -->
 
                                 </div><!-- /panel-body -->
                             </div><!-- /panel-collapse -->
@@ -671,6 +684,20 @@
                                     </div><!-- /row -->
 
                                     <!-- Salary Starting and Ending -->
+                                    <div class="row margin-bottom-10">
+                                        <div class="col-sm-12 col-md-6">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">Starting Salary</span>
+                                                <input name="s3salary_starting_2" class="form-control" [(ngModel)]="objUser.s3salary_starting_2" />
+                                            </div><!-- /input-group -->
+                                        </div><!-- /col -->
+                                        <div class="col-sm-12 col-md-6">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">Ending Salary</span>
+                                                <input name="s3salary_ending_2" class="form-control" [(ngModel)]="objUser.s3salary_ending_2" />
+                                            </div><!-- /input-group -->
+                                        </div><!-- /col -->
+                                    </div><!-- /row -->
 
 
                                 </div><!-- /panel-body -->
@@ -783,7 +810,43 @@
                                     </div><!-- /row -->
 
                                     <!-- Salary Starting and Ending -->
+                                    <div class="row margin-bottom-10">
+                                        <div class="col-sm-12 col-md-6">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">Starting Salary</span>
+                                                <input name="s3salary_starting_3" class="form-control" [(ngModel)]="objUser.s3salary_starting_3" />
+                                            </div><!-- /input-group -->
+                                        </div><!-- /col -->
+                                        <div class="col-sm-12 col-md-6">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">Ending Salary</span>
+                                                <input name="s3salary_ending_3" class="form-control" [(ngModel)]="objUser.s3salary_ending_3" />
+                                            </div><!-- /input-group -->
+                                        </div><!-- /col -->
+                                    </div><!-- /row -->
 
+
+                                </div><!-- /panel-body -->
+                            </div><!-- /panel-collapse -->
+                        </div>
+                    </div>
+
+                    <!-- Additional Company Info-->
+                    <div class="panel-group">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" href="#moreCompanyInformation3" class="text-decoration-none"><span class="glyphicon glyphicon-briefcase" style="margin-right: 5px;"></span>Additional Information</a>
+                                </h4>
+                            </div>
+                            <div id="moreCompanyInformation3" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <!-- Company Name -->
+                                    <div class="row margin-bottom-10">
+                                        <div class="col-md-12">
+                                            <textarea name="s3additionalCompanyInfo" class="form-control" rows="10" [(ngModel)]="objUser.s3additionalCompanyInfo" placeholder="If you need additional space, we've provided an additional area for you."></textarea>
+                                        </div><!-- /col -->
+                                    </div><!-- /row -->
 
                                 </div><!-- /panel-body -->
                             </div><!-- /panel-collapse -->

@@ -60,6 +60,9 @@ export interface User {
     s3reasonLeaving_3;
     s3salary_starting_3; s3salary_ending_3;
 
+    // More Company Info
+    s3additionalCompanyInfo;
+
 
     /* ========================================================
         Final Section: Signature & Google reCaptcha
