@@ -11,17 +11,18 @@ import "rxjs/Rx"; // used for .map
 @Injectable()
 export class JobApplicationService {
     // REST API Location
-    strRegisterAPI: string = "http://localhost:3003/forms/secure-forms/changessalon/job-application";
+    strRegisterAPI: string;
 
+    // Enable this if form needs to be tested.
     isTesting: boolean = false;
-    objUser: User;
 
-    
-    
-    
+    // Stores user contents.
+    objUser: User;
     
     constructor (private http: Http) {
         if (this.isTesting) {
+            this.strRegisterAPI = "http://localhost:3003/forms/secure-forms/changessalon/job-application";
+            
             // Contains user's info.
             this.objUser = {
                 /* ========================================================
@@ -127,6 +128,8 @@ export class JobApplicationService {
                 googleResponse: null
             }; // objUser
         } else {
+            this.strRegisterAPI = "https://leemtek.com/forms/secure-forms/changessalon/job-application";
+            
             // Contains user's info.
             this.objUser = {
                 /* ========================================================
