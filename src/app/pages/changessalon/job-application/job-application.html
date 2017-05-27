@@ -66,6 +66,9 @@
             </div><!-- /col -->
         </div><!-- /row -->
 
+        <!-- ==================================================================
+            Section 2: Questions
+        ================================================================== -->
         <div class="row margin-bottom-40">
             <div class="col-md-10">
                 <!-- Position applying for. -->
@@ -440,7 +443,9 @@
     </section>
 
 
-    <!-- Work History -->
+    <!-- ==================================================================
+        Section 3: Work History
+    ================================================================== -->
     <section class="bg-color-lightgrey margin-bottom-40 padding40-top-bottom">
         <div class="container">
             <div class="row margin-bottom-20">
@@ -859,7 +864,9 @@
     </section>
 
 
-    <!-- References -->
+    <!-- ==================================================================
+        Section 4: References
+    ================================================================== -->
     <section class="margin-bottom-40 padding40-top-bottom">
         <div class="container">
             <div class="row margin-bottom-20">
@@ -1061,9 +1068,96 @@
 
 
     <!-- ==================================================================
+        Section 5: Availability
+    ================================================================== -->
+    <section class="bg-color-lightgrey margin-bottom-40 padding40-top-bottom">
+        <div class="container">
+            <div class="row margin-bottom-20">
+                <div class="col-md-10 col-md-offset-1">
+                    <h2 class="text-center">Availability</h2>
+                    <div class="lead text-center">
+                        If hired, the hours you have listed will be taken into consideration in our scheduling process<br />
+                        <span class="text-smaller text-italics">(hours are subject to change).</span>
+                    </div>
+                </div><!-- /col -->
+            </div><!-- /row -->
+
+            <div class="row margin-bottom-20">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-hover">
+                            <tr>
+                                <th>Availability</th>
+                                <th>Earliest Time Available</th>
+                                <th>Latest Time Available</th>
+                            </tr>
+                            <tr>
+                                <td>Sunday</td>
+                                <td><input type="text" class="form-control input-sm" name="s5sunday_earliest" [(ngModel)]="objUser.s5sunday_earliest" /></td>
+                                <td><input type="text" class="form-control input-sm" name="s5sunday_latest" [(ngModel)]="objUser.s5sunday_latest" /></td>
+                            </tr>
+                            
+                            <tr>
+                                <td>Monday</td>
+                                <td><input type="text" class="form-control input-sm" name="s5monday_earliest" [(ngModel)]="objUser.s5monday_earliest" /></td>
+                                <td><input type="text" class="form-control input-sm" name="s5monday_latest" [(ngModel)]="objUser.s5monday_latest" /></td>
+                            </tr>
+                            
+                            <tr>
+                                <td>Tuesday</td>
+                                <td><input type="text" class="form-control input-sm" name="s5tuesday_earliest" [(ngModel)]="objUser.s5tuesday_earliest" /></td>
+                                <td><input type="text" class="form-control input-sm" name="s5tuesday_latest" [(ngModel)]="objUser.s5tuesday_latest" /></td>
+                            </tr>
+                            
+                            <tr>
+                                <td>Wednesday</td>
+                                <td><input type="text" class="form-control input-sm" name="s5wednesday_earliest" [(ngModel)]="objUser.s5wednesday_earliest" /></td>
+                                <td><input type="text" class="form-control input-sm" name="s5wednesday_latest" [(ngModel)]="objUser.s5wednesday_latest" /></td>
+                            </tr>
+                            
+                            <tr>
+                                <td>Thursday</td>
+                                <td><input type="text" class="form-control input-sm" name="s5thursday_earliest" [(ngModel)]="objUser.s5thursday_earliest" /></td>
+                                <td><input type="text" class="form-control input-sm" name="s5thursday_latest" [(ngModel)]="objUser.s5thursday_latest" /></td>
+                            </tr>
+                            
+                            <tr>
+                                <td>Friday</td>
+                                <td><input type="text" class="form-control input-sm" name="s5friday_earliest" [(ngModel)]="objUser.s5friday_earliest" /></td>
+                                <td><input type="text" class="form-control input-sm" name="s5friday_latest" [(ngModel)]="objUser.s5friday_latest" /></td>
+                            </tr>
+                            
+                            <tr>
+                                <td>Saturday</td>
+                                <td><input type="text" class="form-control input-sm" name="s5saturday_earliest" [(ngModel)]="objUser.s5saturday_earliest" /></td>
+                                <td><input type="text" class="form-control input-sm" name="s5saturday_latest" [(ngModel)]="objUser.s5saturday_latest" /></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div><!-- /col -->
+            </div><!-- /row -->
+
+        </div><!-- /container -->
+    </section>
+
+
+    <!-- ==================================================================
         Final Section: Recaptcha and Form Submission
     ================================================================== -->
     <section class="container">
+        <div class="row margin-bottom-20">
+            <div class="col-md-10 col-md-offset-1">
+                <h2 class="text-center">Statement</h2>
+                <div class="lead text-center">
+                    To the best of my knowledge, the information I have provided and the statements I have made
+                    in this application are correct and complete. I authorize Changes Salon and Day Spa to
+                    communicate with my former employers, school officials, and persons named as references. I
+                    hereby release Changes Salon and Day Spa and such employers, schools, and individuals
+                    from any liabilities whatsoever for damages resulting from the exchange of such information. 
+                </div>
+            </div><!-- /col -->
+        </div><!-- /row -->
+        
         <div class="row margin-bottom-40">
             <div class="col-md-10 col-md-offset-1">
                 <div class="col-lg-8">
@@ -1081,7 +1175,7 @@
             </div><!-- /col -->
         </div><!-- /row -->
         
-        <div class="row">
+        <div class="row margin-bottom-40">
             <div class="col-lg-2 col-lg-offset-4">
                 <div class="margin-bottom-20">
                     <re-captcha 
@@ -1094,5 +1188,33 @@
                 <button id="btnSubmit" class="btn btn-primary" [disabled]="form.invalid || objUser.googleResponse == null" (click)="mdSend()">Submit</button>
             </div><!-- /col -->
         </div><!-- /row -->
+    </section>
+
+    <section class="bg-color-lightgrey padding40-top-bottom">
+        <div class="container">
+            <!-- Contact & Location -->
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/leemtek-forms/changessalon-job-application/images/logo.png" class="img-responsive margin-bottom-20" alt="Changes Salon" />
+                    
+                    <div class="text-bold">More ways to send to us.</div>
+                    <div>Please send your resume Attn: Cristiana</div>
+                    <div>By fax (925) 947-1235</div>
+                    <div>By email to <a href="mailto:csd@changessalon.com">csd@changessalon.com</a></div>
+                    
+                    <div class="margin-top-20">Or drop off at:</div>
+                    <div style="margin: 10px 0 0 20px;">
+                        <div>Changes Salon &amp; Day Spa, Inc.</div>
+                        <div><a href="https://www.google.com/maps/place/1475+N+Broadway,+Walnut+Creek,+CA+94596/@37.9004024,-122.0626953,17z/data=!3m1!4b1!4m5!3m4!1s0x808561c00455abcd:0xca6e21efe08c88cf!8m2!3d37.9004024!4d-122.0605066" target="_blank">1475 N. Broadway Walnut Creek, CA 94596</a></div>
+                    </div>
+                </div><!-- /col -->
+
+                <div class="col-md-6">
+                    <div class="embed-responsive embed-responsive-4by3">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3148.2849256767904!2d-122.06269528478275!3d37.900402379736654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808561c00455abcd%3A0xca6e21efe08c88cf!2s1475+N+Broadway%2C+Walnut+Creek%2C+CA+94596!5e0!3m2!1sen!2sus!4v1495908903958" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div><!-- /col -->
+            </div><!-- /row -->
+        </div><!-- /container -->
     </section>
 </form>

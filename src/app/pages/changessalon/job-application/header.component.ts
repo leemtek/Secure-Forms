@@ -13,7 +13,7 @@ import { Component } from "@angular/core";
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Changes Salon</a>
+                <a class="navbar-brand cs-nav-logo" href="http://changessalon.com"><img alt="Changes Salon" src="https://d1xrp9zhb3ks3c.cloudfront.net/web/leemtek-forms/changessalon-job-application/images/logo.png" /></a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
@@ -33,6 +33,17 @@ import { Component } from "@angular/core";
         </section>
     `,
     styles: [`
+        /* Logo Adjustments */
+        .cs-nav-logo {
+            padding-top: 4px !important;
+        }
+
+        .cs-nav-logo img {
+            width: auto;
+            height: 42px;
+        }
+        
+        /* Jumbotron */
         section.jumbotron {
             margin-top: -20px;
         }

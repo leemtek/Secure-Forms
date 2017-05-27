@@ -84,6 +84,18 @@ export interface User {
 
 
     /* ========================================================
+        Section 5: Availability
+    ======================================================== */
+    s5sunday_earliest; s5sunday_latest;
+    s5monday_earliest; s5monday_latest;
+    s5tuesday_earliest; s5tuesday_latest;
+    s5wednesday_earliest; s5wednesday_latest;
+    s5thursday_earliest; s5thursday_latest;
+    s5friday_earliest; s5friday_latest;
+    s5saturday_earliest; s5saturday_latest;
+
+
+    /* ========================================================
         Final Section: Signature & Google reCaptcha
     ======================================================== */
     sfSignature: string; sfSignatureDate: string;
