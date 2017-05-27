@@ -78,6 +78,25 @@ export class JobApplicationService {
 
         // Additional company information.
         s3additionalCompanyInfo: null,
+
+
+        /* ========================================================
+            Section 4: References
+        ======================================================== */
+        // Reference 1
+        s4name_1: null, s4phone_1: null,
+        s4address_1: null,
+        s4yearsAcquainted_1: null, s4occupation_1: null,
+
+        // Reference 2
+        s4name_2: null, s4phone_2: null,
+        s4address_2: null,
+        s4yearsAcquainted_2: null, s4occupation_2: null,
+
+        // Reference 3
+        s4name_3: null, s4phone_3: null,
+        s4address_3: null,
+        s4yearsAcquainted_3: null, s4occupation_3: null,
         
 
         /* ========================================================

@@ -65,6 +65,25 @@ export interface User {
 
 
     /* ========================================================
+        Section 4: References
+    ======================================================== */
+    // Reference 1
+    s4name_1; s4phone_1;
+    s4address_1;
+    s4yearsAcquainted_1; s4occupation_1;
+
+    // Reference 2
+    s4name_2; s4phone_2;
+    s4address_2;
+    s4yearsAcquainted_2; s4occupation_2;
+
+    // Reference 3
+    s4name_3; s4phone_3;
+    s4address_3;
+    s4yearsAcquainted_3; s4occupation_3;
+
+
+    /* ========================================================
         Final Section: Signature & Google reCaptcha
     ======================================================== */
     sfSignature: string; sfSignatureDate: string;
