@@ -1091,6 +1091,41 @@
                     </select>
                 </div><!-- /col -->
             </div><!-- /row -->
+
+            <!-- Other Comments -->
+            <div class="row margin-bottom-40">
+                <div class="col-md-5 col-md-offset-1">
+                    <textarea class="form-control" rows="5" name="s5comments" [(ngModel)]="objUser.s5comments" placeholder="Other Comments"></textarea>
+                </div><!-- /col -->
+                <div class="col-md-5">
+                    <textarea class="form-control" rows="5" name="s5affectDailyLife" [(ngModel)]="objUser.s5affectDailyLife" placeholder="Do any of the above complaints or concerns affect your daily life?"></textarea>
+                </div><!-- /col -->
+            </div><!-- /row -->
+
+            <!-- Results you are seeking from treatment? -->
+            <div class="row margin-bottom-40">
+                <div class="col-md-10 col-md-offset-1">
+                    <textarea class="form-control" rows="5" name="s5resultsFromTreatment" [(ngModel)]="objUser.s5resultsFromTreatment" placeholder="What are the results you are seeking from treatment?"></textarea>
+                </div><!-- /col -->
+            </div><!-- /row -->
+
+            <!-- Patient Signature & Date -->
+            <div class="row margin-bottom-40">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="col-lg-8">
+                        <div class="form-group">
+                            <label for="s5PatientSignature">Patient Signature</label>
+                            <input type="text" class="form-control" name="s5PatientSignature" [(ngModel)]="objUser.s5PatientSignature" placeholder="Type your full name.">
+                        </div>
+                    </div><!-- /col -->
+                    <div class="col-lg-4">
+                        <div class="form-group">
+                            <label for="s5SignatureDate">Date</label>
+                            <input type="text" class="form-control" name="s5SignatureDate" [(ngModel)]="objUser.s5SignatureDate" placeholder="12/01/2018">
+                        </div>
+                    </div><!-- /col -->
+                </div><!-- /col -->
+            </div><!-- /row -->
         </div><!-- /container -->
     </section>
 

@@ -135,13 +135,13 @@ export class NewPatientService {
             s5concerns: ["General Appearance", "Smile"],
 
             // More
-            s5comments: "na",
-            s5affectDailyLife: "na",
-            s5resultsFromTreatment: "na",
+            s5comments: null,
+            s5affectDailyLife: null,
+            s5resultsFromTreatment: null,
 
             // Signature
-            s5PatientSignature: "na",
-            s5SignatureDate: "na",
+            s5PatientSignature: null,
+            s5SignatureDate: null,
 
         
         /* ========================================================
