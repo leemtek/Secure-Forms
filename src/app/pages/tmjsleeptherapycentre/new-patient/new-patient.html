@@ -539,11 +539,18 @@
                             <label for="s5headachePain">Headache Pain</label>
                         </div>
                         <div class="col-md-6">
-                            <select name="s5headachePain" class="form-control" [(ngModel)]="objUser.s5headachePain">
-                                <option value="na">Please select</option>
-                                <option value="Recent">Recent</option>
-                                <option value="Chronic">Chronic (6 months+)</option>
-                            </select>
+                            <div class="input-group">
+                            <div class="input-group-btn">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{(objUser.s5headachePain == "na") ? ("Please select") : (objUser.s5headachePain)}} <span class="caret"></span></button>
+                                <ul class="dropdown-menu">
+                                    <li><a (click)="objUser.s5headachePain = 'na'">Please select</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a (click)="objUser.s5headachePain = 'Recent'">Recent</a></li>
+                                    <li><a (click)="objUser.s5headachePain = 'Chronic'">Chronic (6 months+)</a></li>
+                                </ul>
+                            </div><!-- /btn-group -->
+                            <input type="number" class="form-control" aria-label="..." placeholder="#1-9" />
+                            </div><!-- /input-group -->
                         </div>
                     </div>
 
