@@ -73,8 +73,8 @@ export interface User {
         Section 5: Chief Complaint
     ======================================================== */
     // Left Column
-    s5headachePain;
-    s5earPain;
+    s5headachePain; s5headachePain_priority;
+    s5earPain; s5earPain_priority;
     s5jawPain;
     s5painChewing;
     s5facialPain;

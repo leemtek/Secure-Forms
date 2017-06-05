@@ -90,8 +90,8 @@ export class NewPatientService {
                 Section 5: Chief Complaint
             ======================================================== */
             // Left Column
-            s5headachePain: "na",
-            s5earPain: "na",
+            s5headachePain: "na", s5headachePain_priority: "na",
+            s5earPain: "na", s5earPain_priority: "na",
             s5jawPain: "na",
             s5painChewing: "na",
             s5facialPain: "na",
