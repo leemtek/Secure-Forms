@@ -1282,238 +1282,630 @@
                     <div class="row margin-bottom-10">
                         <div class="col-md-pull-0 col-md-6 pull-right">
                             <label for="s5swellingAnklesFeed">Swelling in Ankles or Feet</label>
-                        </div>
+                        </div><!-- /col -->
                         <div class="col-md-push-0 col-md-6">
-                            <select name="s5swellingAnklesFeed" class="form-control" [(ngModel)]="objUser.s5swellingAnklesFeed">
-                                <option value="na">Please select</option>
-                                <option value="Recent">Recent</option>
-                                <option value="Chronic">Chronic (6 months+)</option>
-                            </select>
-                        </div>
+                            <div class="btn-group">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{(objUser.s5swellingAnklesFeed == "na") ? ("Please select") : (objUser.s5swellingAnklesFeed)}} <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a (click)="objUser.s5swellingAnklesFeed = 'na'">Please select</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a (click)="objUser.s5swellingAnklesFeed = 'Recent'">Recent</a></li>
+                                        <li><a (click)="objUser.s5swellingAnklesFeed = 'Chronic'">Chronic (6 months+)</a></li>
+                                    </ul>
+                                </div><!-- /btn-group -->
+
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{(objUser.s5swellingAnklesFeed_priority == "na") ? ("Choose #1-9") : (objUser.s5swellingAnklesFeed_priority)}} <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a (click)="objUser.s5swellingAnklesFeed_priority = 'na'">Please select</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a (click)="objUser.s5swellingAnklesFeed_priority = 1">1</a></li>
+                                        <li><a (click)="objUser.s5swellingAnklesFeed_priority = 2">2</a></li>
+                                        <li><a (click)="objUser.s5swellingAnklesFeed_priority = 3">3</a></li>
+                                        <li><a (click)="objUser.s5swellingAnklesFeed_priority = 4">4</a></li>
+                                        <li><a (click)="objUser.s5swellingAnklesFeed_priority = 5">5</a></li>
+                                        <li><a (click)="objUser.s5swellingAnklesFeed_priority = 6">6</a></li>
+                                        <li><a (click)="objUser.s5swellingAnklesFeed_priority = 7">7</a></li>
+                                        <li><a (click)="objUser.s5swellingAnklesFeed_priority = 8">8</a></li>
+                                        <li><a (click)="objUser.s5swellingAnklesFeed_priority = 9">9</a></li>
+                                    </ul>
+                                </div><!-- /btn-group -->
+                            </div><!-- /btn-group -->
+                        </div><!-- /col -->
                     </div>
 
                     <!-- Complaint Item -->
                     <div class="row margin-bottom-10">
                         <div class="col-md-pull-0 col-md-6 pull-right">
                             <label for="s5morningHoarseness">Morning Hoarsensss</label>
-                        </div>
+                        </div><!-- /col -->
                         <div class="col-md-push-0 col-md-6">
-                            <select name="s5morningHoarseness" class="form-control" [(ngModel)]="objUser.s5morningHoarseness">
-                                <option value="na">Please select</option>
-                                <option value="Recent">Recent</option>
-                                <option value="Chronic">Chronic (6 months+)</option>
-                            </select>
-                        </div>
+                            <div class="btn-group">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{(objUser.s5morningHoarseness == "na") ? ("Please select") : (objUser.s5morningHoarseness)}} <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a (click)="objUser.s5morningHoarseness = 'na'">Please select</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a (click)="objUser.s5morningHoarseness = 'Recent'">Recent</a></li>
+                                        <li><a (click)="objUser.s5morningHoarseness = 'Chronic'">Chronic (6 months+)</a></li>
+                                    </ul>
+                                </div><!-- /btn-group -->
+
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{(objUser.s5morningHoarseness_priority == "na") ? ("Choose #1-9") : (objUser.s5morningHoarseness_priority)}} <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a (click)="objUser.s5morningHoarseness_priority = 'na'">Please select</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a (click)="objUser.s5morningHoarseness_priority = 1">1</a></li>
+                                        <li><a (click)="objUser.s5morningHoarseness_priority = 2">2</a></li>
+                                        <li><a (click)="objUser.s5morningHoarseness_priority = 3">3</a></li>
+                                        <li><a (click)="objUser.s5morningHoarseness_priority = 4">4</a></li>
+                                        <li><a (click)="objUser.s5morningHoarseness_priority = 5">5</a></li>
+                                        <li><a (click)="objUser.s5morningHoarseness_priority = 6">6</a></li>
+                                        <li><a (click)="objUser.s5morningHoarseness_priority = 7">7</a></li>
+                                        <li><a (click)="objUser.s5morningHoarseness_priority = 8">8</a></li>
+                                        <li><a (click)="objUser.s5morningHoarseness_priority = 9">9</a></li>
+                                    </ul>
+                                </div><!-- /btn-group -->
+                            </div><!-- /btn-group -->
+                        </div><!-- /col -->
                     </div>
 
                     <!-- Complaint Item -->
                     <div class="row margin-bottom-10">
                         <div class="col-md-pull-0 col-md-6 pull-right">
                             <label for="s5dryMouth">Dry Mouth Upon Waking</label>
-                        </div>
+                        </div><!-- /col -->
                         <div class="col-md-push-0 col-md-6">
-                            <select name="s5dryMouth" class="form-control" [(ngModel)]="objUser.s5dryMouth">
-                                <option value="na">Please select</option>
-                                <option value="Recent">Recent</option>
-                                <option value="Chronic">Chronic (6 months+)</option>
-                            </select>
-                        </div>
+                            <div class="btn-group">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{(objUser.s5dryMouth == "na") ? ("Please select") : (objUser.s5dryMouth)}} <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a (click)="objUser.s5dryMouth = 'na'">Please select</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a (click)="objUser.s5dryMouth = 'Recent'">Recent</a></li>
+                                        <li><a (click)="objUser.s5dryMouth = 'Chronic'">Chronic (6 months+)</a></li>
+                                    </ul>
+                                </div><!-- /btn-group -->
+
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{(objUser.s5dryMouth_priority == "na") ? ("Choose #1-9") : (objUser.s5dryMouth_priority)}} <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a (click)="objUser.s5dryMouth_priority = 'na'">Please select</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a (click)="objUser.s5dryMouth_priority = 1">1</a></li>
+                                        <li><a (click)="objUser.s5dryMouth_priority = 2">2</a></li>
+                                        <li><a (click)="objUser.s5dryMouth_priority = 3">3</a></li>
+                                        <li><a (click)="objUser.s5dryMouth_priority = 4">4</a></li>
+                                        <li><a (click)="objUser.s5dryMouth_priority = 5">5</a></li>
+                                        <li><a (click)="objUser.s5dryMouth_priority = 6">6</a></li>
+                                        <li><a (click)="objUser.s5dryMouth_priority = 7">7</a></li>
+                                        <li><a (click)="objUser.s5dryMouth_priority = 8">8</a></li>
+                                        <li><a (click)="objUser.s5dryMouth_priority = 9">9</a></li>
+                                    </ul>
+                                </div><!-- /btn-group -->
+                            </div><!-- /btn-group -->
+                        </div><!-- /col -->
                     </div>
 
                     <!-- Complaint Item -->
                     <div class="row margin-bottom-10">
                         <div class="col-md-pull-0 col-md-6 pull-right">
                             <label for="s5fatigue">Fatigue</label>
-                        </div>
+                        </div><!-- /col -->
                         <div class="col-md-push-0 col-md-6">
-                            <select name="s5fatigue" class="form-control" [(ngModel)]="objUser.s5fatigue">
-                                <option value="na">Please select</option>
-                                <option value="Recent">Recent</option>
-                                <option value="Chronic">Chronic (6 months+)</option>
-                            </select>
-                        </div>
+                            <div class="btn-group">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{(objUser.s5fatigue == "na") ? ("Please select") : (objUser.s5fatigue)}} <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a (click)="objUser.s5fatigue = 'na'">Please select</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a (click)="objUser.s5fatigue = 'Recent'">Recent</a></li>
+                                        <li><a (click)="objUser.s5fatigue = 'Chronic'">Chronic (6 months+)</a></li>
+                                    </ul>
+                                </div><!-- /btn-group -->
+
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{(objUser.s5fatigue_priority == "na") ? ("Choose #1-9") : (objUser.s5fatigue_priority)}} <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a (click)="objUser.s5fatigue_priority = 'na'">Please select</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a (click)="objUser.s5fatigue_priority = 1">1</a></li>
+                                        <li><a (click)="objUser.s5fatigue_priority = 2">2</a></li>
+                                        <li><a (click)="objUser.s5fatigue_priority = 3">3</a></li>
+                                        <li><a (click)="objUser.s5fatigue_priority = 4">4</a></li>
+                                        <li><a (click)="objUser.s5fatigue_priority = 5">5</a></li>
+                                        <li><a (click)="objUser.s5fatigue_priority = 6">6</a></li>
+                                        <li><a (click)="objUser.s5fatigue_priority = 7">7</a></li>
+                                        <li><a (click)="objUser.s5fatigue_priority = 8">8</a></li>
+                                        <li><a (click)="objUser.s5fatigue_priority = 9">9</a></li>
+                                    </ul>
+                                </div><!-- /btn-group -->
+                            </div><!-- /btn-group -->
+                        </div><!-- /col -->
                     </div>
+
 
                     <!-- Complaint Item -->
                     <div class="row margin-bottom-10">
                         <div class="col-md-pull-0 col-md-6 pull-right">
                             <label for="s5difficultyFallingAsleep">Difficulty Falling Asleep</label>
-                        </div>
+                        </div><!-- /col -->
                         <div class="col-md-push-0 col-md-6">
-                            <select name="s5difficultyFallingAsleep" class="form-control" [(ngModel)]="objUser.s5difficultyFallingAsleep">
-                                <option value="na">Please select</option>
-                                <option value="Recent">Recent</option>
-                                <option value="Chronic">Chronic (6 months+)</option>
-                            </select>
-                        </div>
+                            <div class="btn-group">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{(objUser.s5difficultyFallingAsleep == "na") ? ("Please select") : (objUser.s5difficultyFallingAsleep)}} <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a (click)="objUser.s5difficultyFallingAsleep = 'na'">Please select</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a (click)="objUser.s5difficultyFallingAsleep = 'Recent'">Recent</a></li>
+                                        <li><a (click)="objUser.s5difficultyFallingAsleep = 'Chronic'">Chronic (6 months+)</a></li>
+                                    </ul>
+                                </div><!-- /btn-group -->
+
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{(objUser.s5difficultyFallingAsleep_priority == "na") ? ("Choose #1-9") : (objUser.s5difficultyFallingAsleep_priority)}} <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a (click)="objUser.s5difficultyFallingAsleep_priority = 'na'">Please select</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a (click)="objUser.s5difficultyFallingAsleep_priority = 1">1</a></li>
+                                        <li><a (click)="objUser.s5difficultyFallingAsleep_priority = 2">2</a></li>
+                                        <li><a (click)="objUser.s5difficultyFallingAsleep_priority = 3">3</a></li>
+                                        <li><a (click)="objUser.s5difficultyFallingAsleep_priority = 4">4</a></li>
+                                        <li><a (click)="objUser.s5difficultyFallingAsleep_priority = 5">5</a></li>
+                                        <li><a (click)="objUser.s5difficultyFallingAsleep_priority = 6">6</a></li>
+                                        <li><a (click)="objUser.s5difficultyFallingAsleep_priority = 7">7</a></li>
+                                        <li><a (click)="objUser.s5difficultyFallingAsleep_priority = 8">8</a></li>
+                                        <li><a (click)="objUser.s5difficultyFallingAsleep_priority = 9">9</a></li>
+                                    </ul>
+                                </div><!-- /btn-group -->
+                            </div><!-- /btn-group -->
+                        </div><!-- /col -->
                     </div>
 
                     <!-- Complaint Item -->
                     <div class="row margin-bottom-10">
                         <div class="col-md-pull-0 col-md-6 pull-right">
                             <label for="s5tossingTurning">Tossing and Turning Frequently</label>
-                        </div>
+                        </div><!-- /col -->
                         <div class="col-md-push-0 col-md-6">
-                            <select name="s5tossingTurning" class="form-control" [(ngModel)]="objUser.s5tossingTurning">
-                                <option value="na">Please select</option>
-                                <option value="Recent">Recent</option>
-                                <option value="Chronic">Chronic (6 months+)</option>
-                            </select>
-                        </div>
+                            <div class="btn-group">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{(objUser.s5tossingTurning == "na") ? ("Please select") : (objUser.s5tossingTurning)}} <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a (click)="objUser.s5tossingTurning = 'na'">Please select</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a (click)="objUser.s5tossingTurning = 'Recent'">Recent</a></li>
+                                        <li><a (click)="objUser.s5tossingTurning = 'Chronic'">Chronic (6 months+)</a></li>
+                                    </ul>
+                                </div><!-- /btn-group -->
+
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{(objUser.s5tossingTurning_priority == "na") ? ("Choose #1-9") : (objUser.s5tossingTurning_priority)}} <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a (click)="objUser.s5tossingTurning_priority = 'na'">Please select</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a (click)="objUser.s5tossingTurning_priority = 1">1</a></li>
+                                        <li><a (click)="objUser.s5tossingTurning_priority = 2">2</a></li>
+                                        <li><a (click)="objUser.s5tossingTurning_priority = 3">3</a></li>
+                                        <li><a (click)="objUser.s5tossingTurning_priority = 4">4</a></li>
+                                        <li><a (click)="objUser.s5tossingTurning_priority = 5">5</a></li>
+                                        <li><a (click)="objUser.s5tossingTurning_priority = 6">6</a></li>
+                                        <li><a (click)="objUser.s5tossingTurning_priority = 7">7</a></li>
+                                        <li><a (click)="objUser.s5tossingTurning_priority = 8">8</a></li>
+                                        <li><a (click)="objUser.s5tossingTurning_priority = 9">9</a></li>
+                                    </ul>
+                                </div><!-- /btn-group -->
+                            </div><!-- /btn-group -->
+                        </div><!-- /col -->
                     </div>
 
                     <!-- Complaint Item -->
                     <div class="row margin-bottom-10">
                         <div class="col-md-pull-0 col-md-6 pull-right">
                             <label for="s5repeatedlyAwakening">Repeatedly Awakening</label>
-                        </div>
+                        </div><!-- /col -->
                         <div class="col-md-push-0 col-md-6">
-                            <select name="s5repeatedlyAwakening" class="form-control" [(ngModel)]="objUser.s5repeatedlyAwakening">
-                                <option value="na">Please select</option>
-                                <option value="Recent">Recent</option>
-                                <option value="Chronic">Chronic (6 months+)</option>
-                            </select>
-                        </div>
+                            <div class="btn-group">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{(objUser.s5repeatedlyAwakening == "na") ? ("Please select") : (objUser.s5repeatedlyAwakening)}} <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a (click)="objUser.s5repeatedlyAwakening = 'na'">Please select</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a (click)="objUser.s5repeatedlyAwakening = 'Recent'">Recent</a></li>
+                                        <li><a (click)="objUser.s5repeatedlyAwakening = 'Chronic'">Chronic (6 months+)</a></li>
+                                    </ul>
+                                </div><!-- /btn-group -->
+
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{(objUser.s5repeatedlyAwakening_priority == "na") ? ("Choose #1-9") : (objUser.s5repeatedlyAwakening_priority)}} <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a (click)="objUser.s5repeatedlyAwakening_priority = 'na'">Please select</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a (click)="objUser.s5repeatedlyAwakening_priority = 1">1</a></li>
+                                        <li><a (click)="objUser.s5repeatedlyAwakening_priority = 2">2</a></li>
+                                        <li><a (click)="objUser.s5repeatedlyAwakening_priority = 3">3</a></li>
+                                        <li><a (click)="objUser.s5repeatedlyAwakening_priority = 4">4</a></li>
+                                        <li><a (click)="objUser.s5repeatedlyAwakening_priority = 5">5</a></li>
+                                        <li><a (click)="objUser.s5repeatedlyAwakening_priority = 6">6</a></li>
+                                        <li><a (click)="objUser.s5repeatedlyAwakening_priority = 7">7</a></li>
+                                        <li><a (click)="objUser.s5repeatedlyAwakening_priority = 8">8</a></li>
+                                        <li><a (click)="objUser.s5repeatedlyAwakening_priority = 9">9</a></li>
+                                    </ul>
+                                </div><!-- /btn-group -->
+                            </div><!-- /btn-group -->
+                        </div><!-- /col -->
                     </div>
 
                     <!-- Complaint Item -->
                     <div class="row margin-bottom-10">
                         <div class="col-md-pull-0 col-md-6 pull-right">
                             <label for="s5unrefreshed">Feeling Unrefreshed In The Morning</label>
-                        </div>
+                        </div><!-- /col -->
                         <div class="col-md-push-0 col-md-6">
-                            <select name="s5unrefreshed" class="form-control" [(ngModel)]="objUser.s5unrefreshed">
-                                <option value="na">Please select</option>
-                                <option value="Recent">Recent</option>
-                                <option value="Chronic">Chronic (6 months+)</option>
-                            </select>
-                        </div>
+                            <div class="btn-group">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{(objUser.s5unrefreshed == "na") ? ("Please select") : (objUser.s5unrefreshed)}} <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a (click)="objUser.s5unrefreshed = 'na'">Please select</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a (click)="objUser.s5unrefreshed = 'Recent'">Recent</a></li>
+                                        <li><a (click)="objUser.s5unrefreshed = 'Chronic'">Chronic (6 months+)</a></li>
+                                    </ul>
+                                </div><!-- /btn-group -->
+
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{(objUser.s5unrefreshed_priority == "na") ? ("Choose #1-9") : (objUser.s5unrefreshed_priority)}} <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a (click)="objUser.s5unrefreshed_priority = 'na'">Please select</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a (click)="objUser.s5unrefreshed_priority = 1">1</a></li>
+                                        <li><a (click)="objUser.s5unrefreshed_priority = 2">2</a></li>
+                                        <li><a (click)="objUser.s5unrefreshed_priority = 3">3</a></li>
+                                        <li><a (click)="objUser.s5unrefreshed_priority = 4">4</a></li>
+                                        <li><a (click)="objUser.s5unrefreshed_priority = 5">5</a></li>
+                                        <li><a (click)="objUser.s5unrefreshed_priority = 6">6</a></li>
+                                        <li><a (click)="objUser.s5unrefreshed_priority = 7">7</a></li>
+                                        <li><a (click)="objUser.s5unrefreshed_priority = 8">8</a></li>
+                                        <li><a (click)="objUser.s5unrefreshed_priority = 9">9</a></li>
+                                    </ul>
+                                </div><!-- /btn-group -->
+                            </div><!-- /btn-group -->
+                        </div><!-- /col -->
                     </div>
 
                     <!-- Complaint Item -->
                     <div class="row margin-bottom-10">
                         <div class="col-md-pull-0 col-md-6 pull-right">
                             <label for="s5significantDaytimeDrowsiness">Significant Daytime Drowsiness</label>
-                        </div>
+                        </div><!-- /col -->
                         <div class="col-md-push-0 col-md-6">
-                            <select name="s5significantDaytimeDrowsiness" class="form-control" [(ngModel)]="objUser.s5significantDaytimeDrowsiness">
-                                <option value="na">Please select</option>
-                                <option value="Recent">Recent</option>
-                                <option value="Chronic">Chronic (6 months+)</option>
-                            </select>
-                        </div>
-                    </div>
+                            <div class="btn-group">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{(objUser.s5significantDaytimeDrowsiness == "na") ? ("Please select") : (objUser.s5significantDaytimeDrowsiness)}} <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a (click)="objUser.s5significantDaytimeDrowsiness = 'na'">Please select</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a (click)="objUser.s5significantDaytimeDrowsiness = 'Recent'">Recent</a></li>
+                                        <li><a (click)="objUser.s5significantDaytimeDrowsiness = 'Chronic'">Chronic (6 months+)</a></li>
+                                    </ul>
+                                </div><!-- /btn-group -->
 
-                    <!-- Complaint Item -->
-                    <div class="row margin-bottom-10">
-                        <div class="col-md-pull-0 col-md-6 pull-right">
-                            <label for="s5snoring">Frequent Heavy Snoring</label>
-                        </div>
-                        <div class="col-md-push-0 col-md-6">
-                            <select name="s5snoring" class="form-control" [(ngModel)]="objUser.s5snoring">
-                                <option value="na">Please select</option>
-                                <option value="Recent">Recent</option>
-                                <option value="Chronic">Chronic (6 months+)</option>
-                            </select>
-                        </div>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{(objUser.s5significantDaytimeDrowsiness_priority == "na") ? ("Choose #1-9") : (objUser.s5significantDaytimeDrowsiness_priority)}} <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a (click)="objUser.s5significantDaytimeDrowsiness_priority = 'na'">Please select</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a (click)="objUser.s5significantDaytimeDrowsiness_priority = 1">1</a></li>
+                                        <li><a (click)="objUser.s5significantDaytimeDrowsiness_priority = 2">2</a></li>
+                                        <li><a (click)="objUser.s5significantDaytimeDrowsiness_priority = 3">3</a></li>
+                                        <li><a (click)="objUser.s5significantDaytimeDrowsiness_priority = 4">4</a></li>
+                                        <li><a (click)="objUser.s5significantDaytimeDrowsiness_priority = 5">5</a></li>
+                                        <li><a (click)="objUser.s5significantDaytimeDrowsiness_priority = 6">6</a></li>
+                                        <li><a (click)="objUser.s5significantDaytimeDrowsiness_priority = 7">7</a></li>
+                                        <li><a (click)="objUser.s5significantDaytimeDrowsiness_priority = 8">8</a></li>
+                                        <li><a (click)="objUser.s5significantDaytimeDrowsiness_priority = 9">9</a></li>
+                                    </ul>
+                                </div><!-- /btn-group -->
+                            </div><!-- /btn-group -->
+                        </div><!-- /col -->
                     </div>
 
                     <!-- Complaint Item -->
                     <div class="row margin-bottom-10">
                         <div class="col-md-pull-0 col-md-6 pull-right">
                             <label for="s5affectSleepOthers">Affects Sleep of Others</label>
-                        </div>
+                        </div><!-- /col -->
                         <div class="col-md-push-0 col-md-6">
-                            <select name="s5affectSleepOthers" class="form-control" [(ngModel)]="objUser.s5affectSleepOthers">
-                                <option value="na">Please select</option>
-                                <option value="Recent">Recent</option>
-                                <option value="Chronic">Chronic (6 months+)</option>
-                            </select>
-                        </div>
+                            <div class="btn-group">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{(objUser.s5affectSleepOthers == "na") ? ("Please select") : (objUser.s5affectSleepOthers)}} <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a (click)="objUser.s5affectSleepOthers = 'na'">Please select</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a (click)="objUser.s5affectSleepOthers = 'Recent'">Recent</a></li>
+                                        <li><a (click)="objUser.s5affectSleepOthers = 'Chronic'">Chronic (6 months+)</a></li>
+                                    </ul>
+                                </div><!-- /btn-group -->
+
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{(objUser.s5affectSleepOthers_priority == "na") ? ("Choose #1-9") : (objUser.s5affectSleepOthers_priority)}} <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a (click)="objUser.s5affectSleepOthers_priority = 'na'">Please select</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a (click)="objUser.s5affectSleepOthers_priority = 1">1</a></li>
+                                        <li><a (click)="objUser.s5affectSleepOthers_priority = 2">2</a></li>
+                                        <li><a (click)="objUser.s5affectSleepOthers_priority = 3">3</a></li>
+                                        <li><a (click)="objUser.s5affectSleepOthers_priority = 4">4</a></li>
+                                        <li><a (click)="objUser.s5affectSleepOthers_priority = 5">5</a></li>
+                                        <li><a (click)="objUser.s5affectSleepOthers_priority = 6">6</a></li>
+                                        <li><a (click)="objUser.s5affectSleepOthers_priority = 7">7</a></li>
+                                        <li><a (click)="objUser.s5affectSleepOthers_priority = 8">8</a></li>
+                                        <li><a (click)="objUser.s5affectSleepOthers_priority = 9">9</a></li>
+                                    </ul>
+                                </div><!-- /btn-group -->
+                            </div><!-- /btn-group -->
+                        </div><!-- /col -->
+                    </div>
+
+                    <!-- Complaint Item -->
+                    <div class="row margin-bottom-10">
+                        <div class="col-md-pull-0 col-md-6 pull-right">
+                            <label for="s5snoring">Affects Sleep of Others</label>
+                        </div><!-- /col -->
+                        <div class="col-md-push-0 col-md-6">
+                            <div class="btn-group">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{(objUser.s5snoring == "na") ? ("Please select") : (objUser.s5snoring)}} <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a (click)="objUser.s5snoring = 'na'">Please select</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a (click)="objUser.s5snoring = 'Recent'">Recent</a></li>
+                                        <li><a (click)="objUser.s5snoring = 'Chronic'">Chronic (6 months+)</a></li>
+                                    </ul>
+                                </div><!-- /btn-group -->
+
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{(objUser.s5snoring_priority == "na") ? ("Choose #1-9") : (objUser.s5snoring_priority)}} <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a (click)="objUser.s5snoring_priority = 'na'">Please select</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a (click)="objUser.s5snoring_priority = 1">1</a></li>
+                                        <li><a (click)="objUser.s5snoring_priority = 2">2</a></li>
+                                        <li><a (click)="objUser.s5snoring_priority = 3">3</a></li>
+                                        <li><a (click)="objUser.s5snoring_priority = 4">4</a></li>
+                                        <li><a (click)="objUser.s5snoring_priority = 5">5</a></li>
+                                        <li><a (click)="objUser.s5snoring_priority = 6">6</a></li>
+                                        <li><a (click)="objUser.s5snoring_priority = 7">7</a></li>
+                                        <li><a (click)="objUser.s5snoring_priority = 8">8</a></li>
+                                        <li><a (click)="objUser.s5snoring_priority = 9">9</a></li>
+                                    </ul>
+                                </div><!-- /btn-group -->
+                            </div><!-- /btn-group -->
+                        </div><!-- /col -->
                     </div>
 
                     <!-- Complaint Item -->
                     <div class="row margin-bottom-10">
                         <div class="col-md-pull-0 col-md-6 pull-right">
                             <label for="s5gaspingWaking">Gasping When Waking</label>
-                        </div>
+                        </div><!-- /col -->
                         <div class="col-md-push-0 col-md-6">
-                            <select name="s5gaspingWaking" class="form-control" [(ngModel)]="objUser.s5gaspingWaking">
-                                <option value="na">Please select</option>
-                                <option value="Recent">Recent</option>
-                                <option value="Chronic">Chronic (6 months+)</option>
-                            </select>
-                        </div>
+                            <div class="btn-group">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{(objUser.s5gaspingWaking == "na") ? ("Please select") : (objUser.s5gaspingWaking)}} <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a (click)="objUser.s5gaspingWaking = 'na'">Please select</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a (click)="objUser.s5gaspingWaking = 'Recent'">Recent</a></li>
+                                        <li><a (click)="objUser.s5gaspingWaking = 'Chronic'">Chronic (6 months+)</a></li>
+                                    </ul>
+                                </div><!-- /btn-group -->
+
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{(objUser.s5gaspingWaking_priority == "na") ? ("Choose #1-9") : (objUser.s5gaspingWaking_priority)}} <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a (click)="objUser.s5gaspingWaking_priority = 'na'">Please select</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a (click)="objUser.s5gaspingWaking_priority = 1">1</a></li>
+                                        <li><a (click)="objUser.s5gaspingWaking_priority = 2">2</a></li>
+                                        <li><a (click)="objUser.s5gaspingWaking_priority = 3">3</a></li>
+                                        <li><a (click)="objUser.s5gaspingWaking_priority = 4">4</a></li>
+                                        <li><a (click)="objUser.s5gaspingWaking_priority = 5">5</a></li>
+                                        <li><a (click)="objUser.s5gaspingWaking_priority = 6">6</a></li>
+                                        <li><a (click)="objUser.s5gaspingWaking_priority = 7">7</a></li>
+                                        <li><a (click)="objUser.s5gaspingWaking_priority = 8">8</a></li>
+                                        <li><a (click)="objUser.s5gaspingWaking_priority = 9">9</a></li>
+                                    </ul>
+                                </div><!-- /btn-group -->
+                            </div><!-- /btn-group -->
+                        </div><!-- /col -->
                     </div>
 
                     <!-- Complaint Item -->
                     <div class="row margin-bottom-10">
                         <div class="col-md-pull-0 col-md-6 pull-right">
                             <label for="s5stopBreathing">Stop Breathing During Sleep</label>
-                        </div>
+                        </div><!-- /col -->
                         <div class="col-md-push-0 col-md-6">
-                            <select name="s5stopBreathing" class="form-control" [(ngModel)]="objUser.s5stopBreathing">
-                                <option value="na">Please select</option>
-                                <option value="Recent">Recent</option>
-                                <option value="Chronic">Chronic (6 months+)</option>
-                            </select>
-                        </div>
+                            <div class="btn-group">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{(objUser.s5stopBreathing == "na") ? ("Please select") : (objUser.s5stopBreathing)}} <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a (click)="objUser.s5stopBreathing = 'na'">Please select</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a (click)="objUser.s5stopBreathing = 'Recent'">Recent</a></li>
+                                        <li><a (click)="objUser.s5stopBreathing = 'Chronic'">Chronic (6 months+)</a></li>
+                                    </ul>
+                                </div><!-- /btn-group -->
+
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{(objUser.s5stopBreathing_priority == "na") ? ("Choose #1-9") : (objUser.s5stopBreathing_priority)}} <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a (click)="objUser.s5stopBreathing_priority = 'na'">Please select</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a (click)="objUser.s5stopBreathing_priority = 1">1</a></li>
+                                        <li><a (click)="objUser.s5stopBreathing_priority = 2">2</a></li>
+                                        <li><a (click)="objUser.s5stopBreathing_priority = 3">3</a></li>
+                                        <li><a (click)="objUser.s5stopBreathing_priority = 4">4</a></li>
+                                        <li><a (click)="objUser.s5stopBreathing_priority = 5">5</a></li>
+                                        <li><a (click)="objUser.s5stopBreathing_priority = 6">6</a></li>
+                                        <li><a (click)="objUser.s5stopBreathing_priority = 7">7</a></li>
+                                        <li><a (click)="objUser.s5stopBreathing_priority = 8">8</a></li>
+                                        <li><a (click)="objUser.s5stopBreathing_priority = 9">9</a></li>
+                                    </ul>
+                                </div><!-- /btn-group -->
+                            </div><!-- /btn-group -->
+                        </div><!-- /col -->
                     </div>
 
                     <!-- Complaint Item -->
                     <div class="row margin-bottom-10">
                         <div class="col-md-pull-0 col-md-6 pull-right">
                             <label for="s5nightChokingSpells">Night-time Choking Spells</label>
-                        </div>
+                        </div><!-- /col -->
                         <div class="col-md-push-0 col-md-6">
-                            <select name="s5nightChokingSpells" class="form-control" [(ngModel)]="objUser.s5nightChokingSpells">
-                                <option value="na">Please select</option>
-                                <option value="Recent">Recent</option>
-                                <option value="Chronic">Chronic (6 months+)</option>
-                            </select>
-                        </div>
+                            <div class="btn-group">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{(objUser.s5nightChokingSpells == "na") ? ("Please select") : (objUser.s5nightChokingSpells)}} <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a (click)="objUser.s5nightChokingSpells = 'na'">Please select</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a (click)="objUser.s5nightChokingSpells = 'Recent'">Recent</a></li>
+                                        <li><a (click)="objUser.s5nightChokingSpells = 'Chronic'">Chronic (6 months+)</a></li>
+                                    </ul>
+                                </div><!-- /btn-group -->
+
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{(objUser.s5nightChokingSpells_priority == "na") ? ("Choose #1-9") : (objUser.s5nightChokingSpells_priority)}} <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a (click)="objUser.s5nightChokingSpells_priority = 'na'">Please select</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a (click)="objUser.s5nightChokingSpells_priority = 1">1</a></li>
+                                        <li><a (click)="objUser.s5nightChokingSpells_priority = 2">2</a></li>
+                                        <li><a (click)="objUser.s5nightChokingSpells_priority = 3">3</a></li>
+                                        <li><a (click)="objUser.s5nightChokingSpells_priority = 4">4</a></li>
+                                        <li><a (click)="objUser.s5nightChokingSpells_priority = 5">5</a></li>
+                                        <li><a (click)="objUser.s5nightChokingSpells_priority = 6">6</a></li>
+                                        <li><a (click)="objUser.s5nightChokingSpells_priority = 7">7</a></li>
+                                        <li><a (click)="objUser.s5nightChokingSpells_priority = 8">8</a></li>
+                                        <li><a (click)="objUser.s5nightChokingSpells_priority = 9">9</a></li>
+                                    </ul>
+                                </div><!-- /btn-group -->
+                            </div><!-- /btn-group -->
+                        </div><!-- /col -->
                     </div>
 
                     <!-- Complaint Item -->
                     <div class="row margin-bottom-10">
                         <div class="col-md-pull-0 col-md-6 pull-right">
                             <label for="s5cpap">Unable to Tolerate C-Pap</label>
-                        </div>
+                        </div><!-- /col -->
                         <div class="col-md-push-0 col-md-6">
-                            <select name="s5cpap" class="form-control" [(ngModel)]="objUser.s5cpap">
-                                <option value="na">Please select</option>
-                                <option value="Recent">Recent</option>
-                                <option value="Chronic">Chronic (6 months+)</option>
-                            </select>
-                        </div>
+                            <div class="btn-group">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{(objUser.s5cpap == "na") ? ("Please select") : (objUser.s5cpap)}} <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a (click)="objUser.s5cpap = 'na'">Please select</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a (click)="objUser.s5cpap = 'Recent'">Recent</a></li>
+                                        <li><a (click)="objUser.s5cpap = 'Chronic'">Chronic (6 months+)</a></li>
+                                    </ul>
+                                </div><!-- /btn-group -->
+
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{(objUser.s5cpap_priority == "na") ? ("Choose #1-9") : (objUser.s5cpap_priority)}} <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a (click)="objUser.s5cpap_priority = 'na'">Please select</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a (click)="objUser.s5cpap_priority = 1">1</a></li>
+                                        <li><a (click)="objUser.s5cpap_priority = 2">2</a></li>
+                                        <li><a (click)="objUser.s5cpap_priority = 3">3</a></li>
+                                        <li><a (click)="objUser.s5cpap_priority = 4">4</a></li>
+                                        <li><a (click)="objUser.s5cpap_priority = 5">5</a></li>
+                                        <li><a (click)="objUser.s5cpap_priority = 6">6</a></li>
+                                        <li><a (click)="objUser.s5cpap_priority = 7">7</a></li>
+                                        <li><a (click)="objUser.s5cpap_priority = 8">8</a></li>
+                                        <li><a (click)="objUser.s5cpap_priority = 9">9</a></li>
+                                    </ul>
+                                </div><!-- /btn-group -->
+                            </div><!-- /btn-group -->
+                        </div><!-- /col -->
                     </div>
 
                     <!-- Complaint Item -->
                     <div class="row margin-bottom-10">
                         <div class="col-md-pull-0 col-md-6 pull-right">
                             <label for="s5toothGrinding">Tooth Grinding</label>
-                        </div>
+                        </div><!-- /col -->
                         <div class="col-md-push-0 col-md-6">
-                            <select name="s5toothGrinding" class="form-control" [(ngModel)]="objUser.s5toothGrinding">
-                                <option value="na">Please select</option>
-                                <option value="Recent">Recent</option>
-                                <option value="Chronic">Chronic (6 months+)</option>
-                            </select>
-                        </div>
+                            <div class="btn-group">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{(objUser.s5toothGrinding == "na") ? ("Please select") : (objUser.s5toothGrinding)}} <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a (click)="objUser.s5toothGrinding = 'na'">Please select</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a (click)="objUser.s5toothGrinding = 'Recent'">Recent</a></li>
+                                        <li><a (click)="objUser.s5toothGrinding = 'Chronic'">Chronic (6 months+)</a></li>
+                                    </ul>
+                                </div><!-- /btn-group -->
+
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{(objUser.s5toothGrinding_priority == "na") ? ("Choose #1-9") : (objUser.s5toothGrinding_priority)}} <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a (click)="objUser.s5toothGrinding_priority = 'na'">Please select</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a (click)="objUser.s5toothGrinding_priority = 1">1</a></li>
+                                        <li><a (click)="objUser.s5toothGrinding_priority = 2">2</a></li>
+                                        <li><a (click)="objUser.s5toothGrinding_priority = 3">3</a></li>
+                                        <li><a (click)="objUser.s5toothGrinding_priority = 4">4</a></li>
+                                        <li><a (click)="objUser.s5toothGrinding_priority = 5">5</a></li>
+                                        <li><a (click)="objUser.s5toothGrinding_priority = 6">6</a></li>
+                                        <li><a (click)="objUser.s5toothGrinding_priority = 7">7</a></li>
+                                        <li><a (click)="objUser.s5toothGrinding_priority = 8">8</a></li>
+                                        <li><a (click)="objUser.s5toothGrinding_priority = 9">9</a></li>
+                                    </ul>
+                                </div><!-- /btn-group -->
+                            </div><!-- /btn-group -->
+                        </div><!-- /col -->
                     </div>
 
                     <!-- Complaint Item -->
                     <div class="row margin-bottom-10">
                         <div class="col-md-pull-0 col-md-6 pull-right">
                             <label for="s5teethCrowding">Tooth Crowding</label>
-                        </div>
+                        </div><!-- /col -->
                         <div class="col-md-push-0 col-md-6">
-                            <select name="s5teethCrowding" class="form-control" [(ngModel)]="objUser.s5teethCrowding">
-                                <option value="na">Please select</option>
-                                <option value="Recent">Recent</option>
-                                <option value="Chronic">Chronic (6 months+)</option>
-                            </select>
-                        </div>
+                            <div class="btn-group">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{(objUser.s5teethCrowding == "na") ? ("Please select") : (objUser.s5teethCrowding)}} <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a (click)="objUser.s5teethCrowding = 'na'">Please select</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a (click)="objUser.s5teethCrowding = 'Recent'">Recent</a></li>
+                                        <li><a (click)="objUser.s5teethCrowding = 'Chronic'">Chronic (6 months+)</a></li>
+                                    </ul>
+                                </div><!-- /btn-group -->
+
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{(objUser.s5teethCrowding_priority == "na") ? ("Choose #1-9") : (objUser.s5teethCrowding_priority)}} <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a (click)="objUser.s5teethCrowding_priority = 'na'">Please select</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a (click)="objUser.s5teethCrowding_priority = 1">1</a></li>
+                                        <li><a (click)="objUser.s5teethCrowding_priority = 2">2</a></li>
+                                        <li><a (click)="objUser.s5teethCrowding_priority = 3">3</a></li>
+                                        <li><a (click)="objUser.s5teethCrowding_priority = 4">4</a></li>
+                                        <li><a (click)="objUser.s5teethCrowding_priority = 5">5</a></li>
+                                        <li><a (click)="objUser.s5teethCrowding_priority = 6">6</a></li>
+                                        <li><a (click)="objUser.s5teethCrowding_priority = 7">7</a></li>
+                                        <li><a (click)="objUser.s5teethCrowding_priority = 8">8</a></li>
+                                        <li><a (click)="objUser.s5teethCrowding_priority = 9">9</a></li>
+                                    </ul>
+                                </div><!-- /btn-group -->
+                            </div><!-- /btn-group -->
+                        </div><!-- /col -->
                     </div>
 
                     <!-- Complaint Item -->
